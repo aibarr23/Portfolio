@@ -1,0 +1,16 @@
+load spamlist1.txt
+filter emails1.txt output1.txt
+load spamlist2.txt
+filter emails1.txt output2.txt
+load spamlist1.txt
+check user@aaa.com
+check user1@xyz.com
+check aaa@aaa.com
+check xyz@aaa.com
+check user@xyz.com
+check user1@xyz.com
+check zippy@xyz.com
+check friend@yahoo.com
+check coe@uic.edu
+check any@massemail.com
+#

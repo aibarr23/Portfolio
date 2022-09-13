@@ -1,0 +1,3 @@
+load spamlist_10k.txt
+filter emails_1k.txt output_1k.txt
+#

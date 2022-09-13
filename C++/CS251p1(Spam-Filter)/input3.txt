@@ -1,0 +1,11 @@
+load spamlist3.txt
+filter emails3.txt output3.txt
+check zizza@aaa.com
+check water@groupon.com
+check zebra@uic.edu
+check zizza@uic.edu
+check zippy@uic.edu
+check zebra@groupon.com
+check zizza@xyz.com
+check aaa@xyz.com
+#

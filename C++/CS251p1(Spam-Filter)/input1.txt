@@ -1,0 +1,9 @@
+load spamlist1.txt
+display
+check offers@groupon.com
+check user2@xyz.com
+check friend@yahoo.com
+check user1@aaa.com
+check user1@xyz.com
+filter emails1.txt output1.txt
+#

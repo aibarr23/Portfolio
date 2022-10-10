@@ -1,0 +1,15 @@
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\bin\Debug\net6.0\tutorialPractice.exe
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\bin\Debug\net6.0\tutorialPractice.deps.json
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\bin\Debug\net6.0\tutorialPractice.runtimeconfig.json
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\bin\Debug\net6.0\tutorialPractice.dll
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\bin\Debug\net6.0\tutorialPractice.pdb
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\obj\Debug\net6.0\tutorialPractice.csproj.AssemblyReference.cache
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\obj\Debug\net6.0\tutorialPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\obj\Debug\net6.0\tutorialPractice.AssemblyInfoInputs.cache
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\obj\Debug\net6.0\tutorialPractice.AssemblyInfo.cs
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\obj\Debug\net6.0\tutorialPractice.csproj.CoreCompileInputs.cache
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\obj\Debug\net6.0\tutorialPractice.dll
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\obj\Debug\net6.0\refint\tutorialPractice.dll
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\obj\Debug\net6.0\tutorialPractice.pdb
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\obj\Debug\net6.0\tutorialPractice.genruntimeconfig.cache
+C:\Users\aibar\Downloads\Portfolio\C#\tutorialPractice\obj\Debug\net6.0\ref\tutorialPractice.dll

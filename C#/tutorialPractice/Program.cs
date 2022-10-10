@@ -1,22 +1,14 @@
-using System;
-using System.Collections.Generic;
-using System.Ling;
-using System.Text;
-using System.Threading.Tasks;
+﻿// See https://aka.ms/new-console-template for more information
 
-namespace Giraffe
+using System;
+
+namespace myPractice
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string [] args)
         {
-            SayHi("Mike");
-            Console.ReadLine();
-        }
-
-        static void SayHi(sttring name)
-        {
-            Console.WriteLine("Hello User " + name);
+            Console.WriteLine("Hello, World!");
         }
     }
 }

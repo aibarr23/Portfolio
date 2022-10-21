@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/2e5d07ab20.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="header">
@@ -18,8 +19,9 @@
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Contact</a></li>
-
+                        <i class="fas fa-times"></i>
                     </ul>
+                    <i class="fas fa-bars"></i>
                 </nav>
                 <div class="header-text">
                     <p>Computer Engineer</p>
@@ -32,13 +34,158 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="">
+                        <img src="images/user.jpg">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
+                        <p>I am someone who has an interest in learning and improving. 
+                            I am a hard worker, even more so when it involves my own personal 
+                            interests. I desire to increase the quality of what I enjoy, such 
+                            as embedded and control systems, robotics, programming, artificial 
+                            intelligence, machine learning, and automation.</p>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('interest')">Interests</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming</span><br>Python, C/C++/C# , object oriented programming, Assembly,
+                                    Ubuntu, AI (artificial intelligence) & ML(machine learning)
+                                    </li>
+                                <li><span>Software</span><br>VS Code, GitHub, MATLAB, Solidworks, Mathematica, Quartus,
+                                    code-composer, Arduino IDE, VNC viewer(raspberry Pi), (normal understanding of Microsoft
+                                    Word, PowerPoint, Excel)</li>
+                                <li><span>Speach</span><br>Proficient in spanish (can read, write, and have normal conversation)
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021-2022</span><br>Senior Design: Automated Watering System</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>BS from University of Illinois at Chicago</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="interest">
+                            <ul>
+                                <li><span>AI & ML</span><br>Enjoy how it works and function as a whole.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+<!-- ---------------services----------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Programming</h2>
+                        <p>Description</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-microchip"></i>
+                        <h2>Embedded & Control Systems</h2>
+                        <p>Description</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-robot"></i>
+                        <h2>Robotics</h2>
+                        <p>Description</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- -----------------portfolio------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/erik-mclean-Cf-kY8HFJOs-unsplash.jpg">
+                        <div class="layer">
+                            <h3>Embedded</h3>
+                            <p>ap does snomeeee</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/sufyan-JUJzjthZnYU-unsplash.jpg">
+                        <div class="layer">
+                            <h3>Robotics</h3>
+                            <p>ap does snomeeee</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/veit-hammer--7RXjpd_XKw-unsplash.jpg">
+                        <div class="layer">
+                            <h3>Software</h3>
+                            <p>ap does snomeeee</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+<!-- -----------------contact-------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i>0123456879</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-twitter-square"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <!-- <p>Copyright © Kevin. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p> -->
+            </div>
+        </div>
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+
     </body>
 </html>

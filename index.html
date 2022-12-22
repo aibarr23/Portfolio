@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="x-icon" href="portfolio-assets/tab-logo.svg">
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
@@ -14,7 +15,7 @@
         <div id="header">
             <div class="container">
                 <nav>
-                    <img src="images/logo.PNG" class="logo">
+                    <img src="portfolio-assets/logo.PNG" class="logo">
                     <ul id="sidemenu">
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -37,15 +38,16 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="images/user.jpg">
+                        <img src="portfolio-assets/user.jpg">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
                         <p>I am someone who has an interest in learning and improving. 
                             I am a hard worker, even more so when it involves my own personal 
-                            interests. I desire to increase the quality of what I enjoy, such 
-                            as embedded and control systems, robotics, programming, artificial 
-                            intelligence, machine learning, and automation.</p>
+                            interests. I desire to increase the quality of what I enjoy being a part of,
+                            as someone that strives to be an Engineer that is complete and efficient in their work
+                            to bring out the growth to what we as Engineers can put our hands on.
+                        </p>
                         
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -79,15 +81,16 @@
                         </div>
                         <div class="tab-contents" id="interest">
                             <ul>
-                                <li><span>Research & Development</span><br></li>
+                                <li><span>Research & Development & Design</span><br></li>
                                 <li><span>AI & ML</span><br></li>
                                 <li><span>Automation</span><br></li>
                                 <li><span>Deep Learning & Neural Networks</span><br></li>
-                                <li><span>Control</span><br></li>
-                                <li><span>Robotics</span><br></li>
-                                <li><span>Embedded</span><br></li>
-                                <li><span>Video Game creation</span><br></li>
-                                <li><span>Table Tennis</span><br></li>
+                                <li><span>Efficiency</span><br></li>
+                                <li><span>Control, Embedded, and Robotics</span><br></li>
+                                <!-- <li><span>Robotics</span><br></li> -->
+                                <!-- <li><span>Embedded</span><br></li> -->
+                                <li>Video Game creation<br></li>
+                                <li>Table Tennis<br></li>
                             </ul>
                         </div>
                     </div>
@@ -152,33 +155,48 @@
                 <h1 class="sub-title">My Work</h1>
                 <div class="work-list">
                     <div class="work">
-                        <img src="images/veit-hammer--7RXjpd_XKw-unsplash.jpg">
+                        <img src="portfolio-assets/veit-hammer--7RXjpd_XKw-unsplash.jpg">
                         <div class="layer">
                             <h3>Software</h3>
-                            <p>Showcasing any uses of software in (projects, examples, school, youtube tutorials, etc.) not 
+                            <p>Showcasing any uses of software in (projects, examples, youtube tutorials, etc.) not 
                                 used for an embedded control or robotics usecase.
                             </p>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
                         </div>
                     </div>
                     <div class="work">
-                        <img src="images/erik-mclean-Cf-kY8HFJOs-unsplash.jpg">
+                        <img src="portfolio-assets/axel-r-Ky0B3cBJGKo-unsplash.jpg">
                         <div class="layer">
                             <h3>Embedded and Control</h3>
                             <p>Showcasing projects or practices involved in embedded systems or control systems</p>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
                         </div>
                     </div>
                     <div class="work">
-                        <img src="images/sufyan-JUJzjthZnYU-unsplash.jpg">
+                        <img src="portfolio-assets/sufyan-JUJzjthZnYU-unsplash.jpg">
                         <div class="layer">
                             <h3>Robotics</h3>
                             <p>Showcasing projects or practices regarding robotics in any shape or form</p>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn">See more</a>
+                <a class="btn" onclick="showmore()" id="smore">See more</a>
+                <div class="show-work" id="sec-work">
+                    <div class="filter-work"></div>
+                    <div class="visible-work" id="work-contents">
+                        <h1>something work</h1>
+                    
+                    </div>
+                    <button class="backbtn" onclick="showless()" id="sless">Close</button>
+                    
+                    <div class="game-feature-box" style="transform: perspective(2000px) translate(0px,0px) rotateY(0deg) rotateX(0deg);">
+                        
+                        <img src="portfolio-assets/sufyan-JUJzjthZnYU-unsplash.jpg" class="object">
+                        
+                    </div>
+                    
+                </div>
             </div>
         </div>
 <!-- -----------------contact-------------- -->
@@ -190,19 +208,33 @@
                         <p><i class="fas fa-paper-plane"></i> 28aibarra@gmail.com</p>
                         <p><i class="fas fa-phone-square-alt"></i> (773) 387-8485</p>
                         <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/anthony-ibarra-b60b1318a/"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://www.facebook.com/alphatrex240"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/anthony-ibarra-b60b1318a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/alphatrex240" target="_blank"><i class="fab fa-facebook"></i></a>
                             <!-- <a href=""><i class="fab fa-twitter-square"></i></a>
                             <a href=""><i class="fab fa-instagram"></i></a> -->
                         </div>
-                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                        <div class="dropdown">
+                            <button class="btn btn2">CV <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                            <div class="dropdown-content">
+                                <a href="portfolio-assets/Anthony_Ibarra-cv.pdf" target="_blank"  class="btn btn3">Open CV</a>
+                                <a href="portfolio-assets/Anthony_Ibarra-cv.pdf" download  class="btn btn3">Download CV</a>
+                            </div>                                
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn2">Resume <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                            <div class="dropdown-content">
+                                <a href="portfolio-assets/Resume.pdf" target="_blank"  class="btn btn3">Open Resume</a>
+                                <a href="portfolio-assets/Resume.pdf" download class="btn btn3">Download Resume</a>
+                            </div>
+                        </div>
+                        
                     </div>
                     <div class="contact-right">
                         <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
                             <input type="email" name="email" placeholder="Your Email" required>
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
+                            <button type="submit" class="btn btn2" style="margin: 20px 20px; padding: 14px 20px;">Submit</button>
                         </form>
                         <span id="msg"></span>
                     </div>
@@ -276,6 +308,37 @@
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
             }
+
+        </script>
+        <script>
+            let work = document.getElementById("sec-work");
+            let disp = document.getElementById("work-contents");
+            let button1 = document.getElementById("sless");
+            // let button2 = document.getElementById("smore");
+            
+            function showmore(){
+                button1.style.diplay = "block";
+                work.style.display = "grid";
+                // disp.style.visibility = "visible";
+            }
+            function showless(){
+                // disp.style.visibility = "hidden";
+                work.style.display = "none";
+            }
+        </script>
+        <script>
+            document.addEventListener("mousemove", e => {
+                var layer = document.querySelector('.game-feature-box');
+                var z = e.clientX;
+                var o = e.clientY;
+                var x = (1.5*(z/36)-20);
+                var y = (1.8*(-o/36)+10);
+                var a = z-400;
+                var b = o-300;
+                layer.style = "transform: perspective(2000px) translate("+a/10+"px,"+b/10+"px) rotateX("+y+"deg) rotateY("+x+"deg);";
+
+            });
+            
 
         </script>
     

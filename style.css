@@ -1,4 +1,29 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"); */
+::-webkit-scrollbar {
+    width: 1.15em;
+}
+::-webkit-scrollbar-track{
+    background: black;
+    border-radius: 100vw;
+    margin-block: .5em
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(1 90 1 / 0%);/*linear-gradient(red,blue)*/
+    border: .25em solid #04dda3;
+    border-radius: 100vw;
+
+    box-shadow: inset 0 0 0.5em 0 #04dda3, 0 0 1em 0 #04dda3;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(#00ff62, black);
+    filter: blur(0.5em);
+}
+@supports (scrollbar-color: red blue){
+    *{
+        scrollbar-color: rgb(2, 253, 2) hsl(120 75% 50% / 1);
+        scrollbar-width: auto;
+    }
+}
 
 *{
     margin: 0;
@@ -10,13 +35,13 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background:  #080808;
+    background:  black;
     color: #fff;
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(./images/hannah-troupe-0FQneB1VjaM-unsplash.jpg);
+    background-image: url(./portfolio-assets/hannah-troupe-0FQneB1VjaM-unsplash.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -29,6 +54,9 @@ nav{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    background: black;
+    box-shadow: 0 0 1em 0 #04dda3;
+    border-radius: 1vw;
 }
 
 .logo{
@@ -125,10 +153,11 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    font-size: 16px;
 }
 .tab-contents ul li span{
     color: #00ff6299;
-    font-size: 14px;
+    font-size: 16px;
 }
 .tab-contents{
     display: none;
@@ -153,7 +182,7 @@ nav ul li a:hover::after{
 .services-list div{
     background-color: #262626;
     padding: 40px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
@@ -179,6 +208,7 @@ nav ul li a:hover::after{
 }
 .services-list div:hover{
     background: #04dda3;
+    color: black;
     transform: translateY(-10px);
 }
 /* ---------------portfolio------------ */
@@ -217,7 +247,7 @@ nav ul li a:hover::after{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     transition: height 0.5s;
 }
 .layer h3{
@@ -256,7 +286,65 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #04dda3;
 }
-
+/* ------------------showcase work----------------- */
+.show-work{
+    display: none;
+}
+.filter-work{
+    display: flex;
+}
+.visible-work{
+    /* display: hidden; */
+    /* visibility: visible; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.visible-work h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.backbtn{
+    display: block;
+    margin: 50px auto;
+    background-color: black;
+    width: fit-content;
+    border: 1px solid #00ff62d4;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.backbtn:hover{
+    background: #04dda3
+}
+.game-feature {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+.game-feature-box{
+    margin-top: 3.12vw;
+    width: 78.69vw;
+    height: 30.62vw;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+}
+.game-feature-box img{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    transform: translate(23.0vw, 2vw);
+}
 /* --------------contact-------------- */
 .contact-left{
     flex-basis: 35%;
@@ -287,10 +375,66 @@ nav ul li a:hover::after{
     color: #04dda3;
     transform: translateY(-5px);
 }
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
 .btn.btn2{
     display: inline-block;
-    background: #00ff62c9;
+    background: black;
+    margin: 10px 5px;
+    padding: 14px 20px;
+    width: fit-content;
+    border: 1px solid #00ff62d4;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
 }
+.btn.btn2:hover{
+    background: #04dda3;
+}
+.btn.btn3{
+    display: inline-block;
+    background: black;
+    margin: 0px 0px;
+    padding: 8px 11px;
+    width: fit-content;
+    border: 1px solid #00ff6200;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: border 0.5s;
+    box-shadow:  rgba(0,0,0,0.2);
+}
+.btn.btn3:hover{
+    border: 1px solid #00ff62d4;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff00;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {border: 1px solid #00ff62d4;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
 .contact-right form{
     width: 100%;   
 }
@@ -327,7 +471,7 @@ form .btn2{
     z-index: 99;
     border: 1px solid #00ff62d4;
     outline: none;
-    background-color: #080808;
+    background-color: black;
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -362,7 +506,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(./images/hannah-troupe-0FQneB1VjaM-unsplash.jpg);
+        background-image: url(./portfolio-assets/hannah-troupe-0FQneB1VjaM-unsplash.jpg);
     }
     .header-text{
         margin-top: 100%;
@@ -376,7 +520,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #00ff62a7;
+        background: linear-gradient(black, #00ff62a7, black);
         position: fixed;
         top: 0;
         right: -200px;

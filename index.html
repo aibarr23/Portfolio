@@ -7,7 +7,7 @@
         <link rel="shortcut icon" type="x-icon" href="portfolio-assets/tab-logo.svg">
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
+        <!-- <script src="script.js" defer></script> -->
         <script src="https://kit.fontawesome.com/2e5d07ab20.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -75,8 +75,8 @@
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>2017-2022</span><br>BS in Computer Engineering at University of Illinois at Chicago</li>
-                                <li><span>2023-present</span><br>MS in Computer Engineering at University of Illinois at Chicago</li>
+                                <li><span>2023 - present</span><br>MS in Computer Engineering at University of Illinois at Chicago</li>
+                                <li><span>2017 - 2022</span><br>BS in Computer Engineering at University of Illinois at Chicago</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="interest">
@@ -89,8 +89,8 @@
                                 <li><span>Control, Embedded, and Robotics</span><br></li>
                                 <!-- <li><span>Robotics</span><br></li> -->
                                 <!-- <li><span>Embedded</span><br></li> -->
-                                <li>Video Game creation<br></li>
                                 <li>Table Tennis<br></li>
+                                <li>Video Game creation<br></li>
                             </ul>
                         </div>
                     </div>
@@ -153,6 +153,58 @@
         <div id="portfolio">
             <div class="container">
                 <h1 class="sub-title">My Work</h1>
+                
+                <div class="title-work" id="all-work">
+                </div>
+                <!-- <a class="btn" onclick="showmore()" id="smore">See more</a> -->
+                <div class="show-work" id="sec-work">
+                    
+                    <div class="game-feature-box" style="transform: perspective(2000px) translate(0px,0px) rotateY(0deg) rotateX(0deg);">
+                        <button class="feature_button feature_button--left is-hidden">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </button>
+                        <div class="feature_track-container">
+                            <ul class="feature_track">
+                                <li class="feature_slide current-slide">
+                                    <img src="portfolio-assets/Works/0.PNG" class="object">
+                                    <div class="showcase-work">
+                                        <h1>Senior Design</h1>
+                                        <p>Automated Watering System</p>
+                                    </div>
+                                </li>
+                                <li class="feature_slide">
+                                    <div class="showcase-work">
+                                        <h1>second slide 2</h1>
+                                    </div>
+                                </li>
+                            </ul>
+                            <iframe id="myPDF" src="" frameborder ="0"></iframe>
+                        </div>
+                        <button class="feature_button feature_button--right">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </button>
+                        <div class="feature_nav">
+                            <button class="feature_indicator current-slide"></button>
+                            <button class="feature_indicator"></button>
+                            <button class="feature_indicator"></button>
+                        </div>
+                    </div>
+               
+                <!-- <button class="backbtn" onclick="showless()" id="sless">Close</button> -->
+                </div>
+                
+                <h2>Extra (miscellaneous) --></h2>
+                <ul class="work-legend" id="legend-W">
+                    <li onclick = "filterEd()" class="list project-filter-active">All</li>
+                    <li onclick = "filterEd()" class="list">From School</li>
+                    <li onclick = "filterEd()" class="list">From Tutorials</li>
+                    <li onclick = "filterEd()" class="list">My own</li>
+                    <li onclick = "filterEd()" class="list">Self Research</li>
+                    <!-- <h1>Legend <button  onclick="hidde()"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button></h1>
+                    <h2> <span><i class="fa fa-play-circle" aria-hidden="true"></i></span> from a youtube tutorial</h2> -->
+                
+                </ul>
+                
                 <div class="work-list">
                     <div class="work">
                         <img src="portfolio-assets/veit-hammer--7RXjpd_XKw-unsplash.jpg">
@@ -161,7 +213,7 @@
                             <p>Showcasing any uses of software in (projects, examples, youtube tutorials, etc.) not 
                                 used for an embedded control or robotics usecase.
                             </p>
-                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                            
                         </div>
                     </div>
                     <div class="work">
@@ -169,7 +221,7 @@
                         <div class="layer">
                             <h3>Embedded and Control</h3>
                             <p>Showcasing projects or practices involved in embedded systems or control systems</p>
-                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                            
                         </div>
                     </div>
                     <div class="work">
@@ -177,28 +229,13 @@
                         <div class="layer">
                             <h3>Robotics</h3>
                             <p>Showcasing projects or practices regarding robotics in any shape or form</p>
-                            <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                            
                         </div>
                     </div>
                 </div>
-                <a class="btn" onclick="showmore()" id="smore">See more</a>
-                <div class="show-work" id="sec-work">
-                    <div class="filter-work"></div>
-                    <div class="visible-work" id="work-contents">
-                        <h1>something work</h1>
-                    
-                    </div>
-                    <button class="backbtn" onclick="showless()" id="sless">Close</button>
-                    
-                    <div class="game-feature-box" style="transform: perspective(2000px) translate(0px,0px) rotateY(0deg) rotateX(0deg);">
-                        
-                        <img src="portfolio-assets/sufyan-JUJzjthZnYU-unsplash.jpg" class="object">
-                        
-                    </div>
-                    
-                </div>
             </div>
         </div>
+    </div>
 <!-- -----------------contact-------------- -->
         <div id="contact">
             <div class="container">
@@ -232,7 +269,7 @@
                     <div class="contact-right">
                         <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                             <button type="submit" class="btn btn2" style="margin: 20px 20px; padding: 14px 20px;">Submit</button>
                         </form>
@@ -244,7 +281,8 @@
                 <!-- <p>Copyright © Kevin. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p> -->
             </div>
         </div>
-        <script>
+        <script src="script.js"></script>
+        <!-- <script>
 
             var tablinks = document.getElementsByClassName("tab-links");
             var tabcontents = document.getElementsByClassName("tab-contents");
@@ -311,18 +349,26 @@
 
         </script>
         <script>
+            let legend = document.getElementById("legend-W");
+            let allWork = document.getElementById("all-work");
+
+            function hidde(){
+                legend.style.display = "none";
+            }
+            function unhidde(){
+                legend.style.display = "flex";
+            }
+        </script>
+        <script>
             let work = document.getElementById("sec-work");
-            let disp = document.getElementById("work-contents");
             let button1 = document.getElementById("sless");
-            // let button2 = document.getElementById("smore");
             
             function showmore(){
                 button1.style.diplay = "block";
-                work.style.display = "grid";
-                // disp.style.visibility = "visible";
+                work.style.display = "block";
+                legend.style.display = "flex";
             }
             function showless(){
-                // disp.style.visibility = "hidden";
                 work.style.display = "none";
             }
         </script>
@@ -331,8 +377,8 @@
                 var layer = document.querySelector('.game-feature-box');
                 var z = e.clientX;
                 var o = e.clientY;
-                var x = (1.5*(z/36)-20);
-                var y = (1.8*(-o/36)+10);
+                var x = (0.0*(z/36)-20+20);
+                var y = (0.0*(-o/36)+10-10);
                 var a = z-400;
                 var b = o-300;
                 layer.style = "transform: perspective(2000px) translate("+a/10+"px,"+b/10+"px) rotateX("+y+"deg) rotateY("+x+"deg);";
@@ -341,6 +387,23 @@
             
 
         </script>
+        <script>
+            const filt = document.getElementsByClassName("work-legend li");
+            var listes = document.getElementsByClassName("list");
+            // filt.addEventListener("onclick",filterEd());
+
+            function filterEd(){
+                for(lis of listes){
+                    lis.classList.remove("project-filter-active");
+                }
+                event.currentTarget.classList.add('project-filter-active');
+                // filt.siblings().remove('project-filter-active');
+            }
+
+
+            
+        
+        </script> -->
     
     </body>
 </html>

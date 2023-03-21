@@ -124,7 +124,12 @@ document.addEventListener("mousemove", e => {
     var y = (0.0*(-o/36)+10-10);
     var a = (z-400)*0.2;
     var b = (o-300)*0.2;
-    layer.style = "transform: perspective(2000px) translate("+a/10+"px,"+b/10+"px) rotateX("+y+"deg) rotateY("+x+"deg);";
+
+    let query = window.matchMedia("(min-width: 600px");
+
+    if(query.matches){
+        layer.style = "transform: perspective(2000px) translate("+a/10+"px,"+b/10+"px) rotateX("+y+"deg) rotateY("+x+"deg);";
+    }
 
 });
 

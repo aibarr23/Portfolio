@@ -99,16 +99,20 @@ function unhidde(){
 
 
 // -----------------------see more button-----------------------
-let work = document.getElementById("sec-work");
+let work = document.getElementById("myPDF");//used to be sec-work
 let button1 = document.getElementById("sless");
+let button2 = document.getElementById("smore");
 
 function showmore(){
-    button1.style.diplay = "block";
-    work.style.display = "block";
-    legend.style.display = "flex";
+    work.style.display = "flex";//used to be block
+    button1.style.display = "block";
+    button2.style.display = "none";
+    // legend.style.display = "flex";
 }
 function showless(){
     work.style.display = "none";
+    button1.style.display = "none";
+    button2.style.display = "block";
 }
 
 

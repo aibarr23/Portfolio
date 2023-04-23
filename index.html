@@ -17,11 +17,12 @@
                 <nav>
                     <img src="portfolio-assets/logo.PNG" class="logo">
                     <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
+                        <!-- <li><a href="#header">Home</a></li> -->
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <!-- <li><a href="#contact">CV / Resume</a></li> -->
                         <i class="fas fa-times" onclick="closemenu()"></i>
                     </ul>
                     <i class="fas fa-bars" onclick="openmenu()"></i>
@@ -29,6 +30,20 @@
                 <div class="header-text">
                     <p>Computer Engineer</p>
                     <h1>Hi, I'm <span>Anthony</span><br>Ibarra from Chicago.</h1>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn2">Resume <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                    <div class="dropdown-content">
+                        <a href="portfolio-assets/Personal-files/Resume.pdf" target="_blank"  class="btn btn3">Open Resume</a>
+                        <a href="portfolio-assets/Personal-files/Resume.pdf" download class="btn btn3">Download Resume</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn2">CV <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                    <div class="dropdown-content">
+                        <a href="portfolio-assets/Personal-files/Anthony_Ibarra-cv.pdf" target="_blank"  class="btn btn3">Open CV</a>
+                        <a href="portfolio-assets/Personal-files/Anthony_Ibarra-cv.pdf" download  class="btn btn3">Download CV</a>
+                    </div>                                
                 </div>
             </div>
         </div>
@@ -58,11 +73,12 @@
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
                                 <li><span>Programming</span><br>Python, C/C++/C# , object oriented programming, Assembly,
-                                     AI (artificial intelligence) & ML(machine learning) algorithms
+                                     AI (artificial intelligence) & ML(machine learning) algorithms, Neural Networks
                                     </li>
-                                <li><span>Software</span><br>VS Code, GitHub, MATLAB, Ubuntu(WSL), Solidworks, Mathematica, Quartus,
+                                <li><span>Software</span><br>VS Code, GitHub, MATLAB, Ubuntu(WSL), Pytorch, Tensorflow, keras, 
+                                    Solidworks, Altium Designer, Anaconda, Mathematica, Quartus,
                                     code-composer, Arduino IDE, VNC viewer(raspberry Pi), (normal understanding of Microsoft
-                                    Word, PowerPoint, Excel)
+                                    Word, PowerPoint, Excel, etc.)
                                 </li>
                                 <li><span>Speach</span><br>Proficient in spanish (can read, write, and have normal conversation)
                                 </li>
@@ -75,8 +91,9 @@
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>2023 - present</span><br>MS in Computer Engineering at University of Illinois at Chicago</li>
-                                <li><span>2017 - 2022</span><br>BS in Computer Engineering at University of Illinois at Chicago</li>
+                                <li><span>Jan 2023 - present</span><br>MS in Computer Engineering at University of Illinois at Chicago</li>
+                                <br>
+                                <li><span>Aug 2017 - May 2022</span><br>BS in Computer Engineering at University of Illinois at Chicago</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="interest">
@@ -149,6 +166,11 @@
                 </div>
             </div>
         </div>
+        
+
+
+
+
 <!-- -----------------portfolio------------- -->
         <div id="portfolio">
             <div class="container">
@@ -163,6 +185,9 @@
                         <button class="feature_button feature_button--left is-hidden">
                             <i class="fa fa-angle-left" aria-hidden="true"></i>
                         </button>
+                        
+
+                        
                         <div class="feature_track-container">
                             <ul class="feature_track">
                                 <li class="feature_slide current-slide">
@@ -190,20 +215,26 @@
                         </div>
                     </div>
 
-                    <!-- <iframe id="myPDF" src="portfolio-assets/Works/work0/AWS.pdf" frameborder ="0"></iframe> -->
+                    <!-- <iframe id="myPDF" src="portfolio-assets/Works/work0/AWS.pdf#scrollbar=0" frameborder ="0"></iframe> -->
                     <!-- testing other pdf viewing thingy for mobile -->
                    
+                    <button class="backbtn" onclick="showless()" id="sless" style="margin-top: 25px;margin-bottom: 25px;">Hide Work Details</button>
+                    
+                    <button class="backbtn" onclick="showmore()" id="smore" style="display: none; margin-top: 25px;margin-bottom: 25px;">Show Work Details</button>
                     <!-- <td align="center"> -->
-                        <object id="myPDF" data="portfolio-assets/Works/work0/AWS.pdf" frameborder="0">
+                        <object id="myPDF" data="portfolio-assets/Works/work0/AWS.pdf#scrollbar=0" frameborder="0">
                         <p>
-                            Your web browser doesn't have pdf plugin. instead you can <a href="porfolio-assets/Works/work0/AWS.pdf" target="_blank">LINK</a>
+                            Your web browser doesn't have pdf plugin. instead you can open the pdf from<a href="portfolio-assets/Works/work0/AWS.pdf" target="_blank">LINK</a>
+                        </p>
+                        <br>
+                        <p>
+                            Or download it from here <a href="portfolio-assets/Works/work0/AWS.pdf" download>LINK</a>
                         </p>
                         </object>
                         
                     <!-- </td> -->
                     
                
-                <!-- <button class="backbtn" onclick="showless()" id="sless">Close</button> -->
                 </div>
                 
                 <h2 style="padding-top: 10px;">Extra (miscellaneous) --></h2>
@@ -260,6 +291,7 @@
                         <div class="social-icons">
                             <a href="https://www.linkedin.com/in/anthony-ibarra-b60b1318a/" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="https://www.facebook.com/alphatrex240" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://github.com/aibarr23/Portfolio" target="_blank"><i class="fa-brands fa-github"></i></a>
                             <!-- <a href=""><i class="fab fa-twitter-square"></i></a>
                             <a href=""><i class="fab fa-instagram"></i></a> -->
                         </div>
@@ -295,6 +327,8 @@
             </div>
         </div>
         <script src="script.js"></script>
+        <script src="WEB/vanilla-tilt.js"></script>
+        
        
     </body>
 </html>

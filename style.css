@@ -89,7 +89,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 30%;
     font-size: 30px;
 }
 .header-text h1{
@@ -694,16 +694,17 @@ nav .fas{
     display: none;
 }
 
+
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(./portfolio-assets/hannah-troupe-0FQneB1VjaM-unsplash.jpg);
     }
     .header-text{
         margin-top: 100%;
-        font-size: 16px;
+        font-size: 25px;
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 40px;
     }
     nav .fas{
         display: block;
@@ -740,11 +741,14 @@ nav .fas{
         margin-bottom: 30px;
     }
     .about-col-2{
-        font-size: 14px;
+        font-size: 15px;
     }
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
+    }
+    .services-list div{
+        font-size: 15px;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
@@ -765,3 +769,19 @@ nav .fas{
     }
 }
 
+
+
+
+/* ---------------------THREE Image Transition-------------------- */
+
+
+/* #instructions {
+	position: absolute;
+	color: #fff;
+	bottom: 0;
+	padding-bottom: 6px;
+	font-family: sans-serif;
+	width: 100%;
+	text-align: center;
+	pointer-events: none;
+} */

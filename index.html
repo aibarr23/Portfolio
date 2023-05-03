@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="x-icon" href="portfolio-assets/tab-logo.svg">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
         <!-- <script src="script.js" defer></script> -->
@@ -12,10 +13,10 @@
     </head>
     <body>
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img src="portfolio-assets/logo.PNG" class="logo">
+        <div class="container">
+            <div class='header'>
+                <img src="portfolio-assets/logo.PNG" class="logo">
+                <nav class="navbar">
                     <ul id="sidemenu">
                         <!-- <li><a href="#header">Home</a></li> -->
                         <li><a href="#about">About</a></li>
@@ -25,8 +26,10 @@
                         <!-- <li><a href="#contact">CV / Resume</a></li> -->
                         <i class="fas fa-times" onclick="closemenu()"></i>
                     </ul>
+                    <i class='bx bx-moon bx-tada' id="darkMode-icon" style="padding-right: 8px;"></i>
                     <i class="fas fa-bars" onclick="openmenu()"></i>
                 </nav>
+            </div>
                 <div class="header-text">
                     <p>Computer Engineer</p>
                     <h1>Hi, I'm <span>Anthony</span><br>Ibarra from Chicago.</h1>
@@ -45,8 +48,10 @@
                         <a href="portfolio-assets/Personal-files/Anthony_Ibarra-cv.pdf" download  class="btn btn3">Download CV</a>
                     </div>                                
                 </div>
-            </div>
+                
+                </div>
         </div>
+
         
 <!-- ---------------about-------------- -->
         <div id="about">
@@ -327,7 +332,7 @@
             </div>
         </div>
         <script src="script.js"></script>
-        <script src="WEB/vanilla-tilt.js"></script>
+        <!-- <script src="WEB/vanilla-tilt.js"></script> -->
         
        
     </body>

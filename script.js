@@ -1,6 +1,11 @@
 console.log('test');
 
- 
+// ------------ sticky navbar --------------
+window.onscroll = () => {
+let header = document.querySelector('.header');
+header.classList.toggle('sticky', window.scrollY > 100);
+};
+
 // ----------------------tabs at the header------------------------
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
@@ -241,6 +246,12 @@ function filterEd(){
 }
 
 
-            
+// ==================dark light mode =====================
+let darkModeIcon = document.querySelector('#darkMode-icon');
+
+darkModeIcon.onclick = () => {
+    darkModeIcon.classList.toggle('bx-sun');
+    document.body.classList.toggle('dark-mode');
+}
         
         

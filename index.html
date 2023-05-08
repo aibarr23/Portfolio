@@ -13,61 +13,85 @@
     </head>
     <body>
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        <div class="container">
-            <div class='header'>
-                <img src="portfolio-assets/logo.PNG" class="logo">
-                <nav class="navbar">
-                    <ul id="sidemenu">
-                        <!-- <li><a href="#header">Home</a></li> -->
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <!-- <li><a href="#contact">CV / Resume</a></li> -->
-                        <i class="fas fa-times" onclick="closemenu()"></i>
-                    </ul>
-                    <i class='bx bx-moon bx-tada' id="darkMode-icon" style="padding-right: 8px;"></i>
-                    <i class="fas fa-bars" onclick="openmenu()"></i>
-                </nav>
-            </div>
-                <div class="header-text">
-                    <p>Computer Engineer</p>
-                    <h1>Hi, I'm <span>Anthony</span><br>Ibarra from Chicago.</h1>
+        
+<!-- -----------------header---------------- -->
+        <header class='header'>
+            <!-- <img src="portfolio-assets/logo.PNG" class="logo"> -->
+            <a href="#" class="logo"><span >A</span>I. </a>
+            <nav class="navbar">
+                <!-- <div class="bx bx-menu bx-x" id="menu-icon"></div> -->
+                <ul id="sidemenu">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <span class="animate" style="--i:2;"></span>
+                    <!-- <li><a href="#contact">CV / Resume</a></li> -->
+                    <i class="fas fa-times"  onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-moon bx-tada' id="darkMode-icon" style="padding-right: 8px;"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </header>
+
+
+<!-- -------------------home---------------- -->
+        <section class="home show-animate" id="home">
+            <div class="home-content">
+                <!-- <p>Computer Engineer</p> -->
+                <h1>Hi, I'm <span>Anthony</span><br>Ibarra</h1>
+                <div class="text-animate">
+                    <h3>Computer Engineer</h3>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn2">Resume <i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                    <div class="dropdown-content">
-                        <a href="portfolio-assets/Personal-files/Resume.pdf" target="_blank"  class="btn btn3">Open Resume</a>
-                        <a href="portfolio-assets/Personal-files/Resume.pdf" download class="btn btn3">Download Resume</a>
+                <h4>Pursuing Masters: Electrical and Computer Engineering</h4>
+                <div class="btn-box">
+                    <div class="dropdown">
+                        <button class="btn btn2">Resume <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                        <div class="dropdown-content">
+                            <a href="portfolio-assets/Personal-files/Resume.pdf" target="_blank"  class="btn btn3">Open Resume</a>
+                            <a href="portfolio-assets/Personal-files/Resume.pdf" download class="btn btn3">Download Resume</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn2">CV <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                        <div class="dropdown-content">
+                            <a href="portfolio-assets/Personal-files/Anthony_Ibarra-cv.pdf" target="_blank"  class="btn btn3">Open CV</a>
+                            <a href="portfolio-assets/Personal-files/Anthony_Ibarra-cv.pdf" download  class="btn btn3">Download CV</a>
+                        </div>                                
                     </div>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn2">CV <i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                    <div class="dropdown-content">
-                        <a href="portfolio-assets/Personal-files/Anthony_Ibarra-cv.pdf" target="_blank"  class="btn btn3">Open CV</a>
-                        <a href="portfolio-assets/Personal-files/Anthony_Ibarra-cv.pdf" download  class="btn btn3">Download CV</a>
-                    </div>                                
-                </div>
-                
-                </div>
-        </div>
+            </div>
+            <!-- <div class="home-sci">
+                <a href="https://www.linkedin.com/in/anthony-ibarra-b60b1318a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/alphatrex240" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/aibarr23/Portfolio" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div> -->
+            <div class="home-imgHover"></div>
+        </section>
 
         
 <!-- ---------------about-------------- -->
-        <div id="about">
-            <div class="container">
+        <section class="about" id="about">
+            <h2 class="heading">About<span> Me</span></h2>
+
+            <div class="about-img">
+                <img src="portfolio-assets/user.jpg">
+                <span class="circle-spin"></span>
+            </div>
+
+            <div class="about-content">
+                <h3>Computer Engineer</h3>
+                <p>I am someone who has an interest in learning and improving. 
+                    I am a hard worker, even more so when it involves my own personal 
+                    interests. I desire to increase the quality of what I enjoy being a part of,
+                    as someone that strives to be an Engineer that is complete and efficient in their work
+                    to bring out the growth to what we as Engineers can put our hands on.
+                </p>
+            </div>
                 <div class="row">
-                    <div class="about-col-1">
-                        <img src="portfolio-assets/user.jpg">
-                    </div>
                     <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>I am someone who has an interest in learning and improving. 
-                            I am a hard worker, even more so when it involves my own personal 
-                            interests. I desire to increase the quality of what I enjoy being a part of,
-                            as someone that strives to be an Engineer that is complete and efficient in their work
-                            to bring out the growth to what we as Engineers can put our hands on.
-                        </p>
+                        
                         
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -117,8 +141,120 @@
                         </div>
                     </div>
                 </div>
+                
+            
+        </section>
+
+
+<!-- ----------------education-------------- -->
+        <section class="education" id="education">
+            <h2 class="heading">My <span>Journey</span></h2>
+
+            <div class="education-row">
+                <div class="education-column">
+                    <h3 class="title">Education</h3>
+
+                    <div class="education-box">
+                        <div class="education-content">                            
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> <span>Jan 2023 - Present</span></div>
+                                <h3>Masterss Degree - University</h3>
+                                <p>MS in Electrical and Computer Engineering at University of Illinois at Chicago<</p>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> <span>Aug 2017 - May 2022</span></div>
+                                <h3>Baschelours Degree - University</h3>
+                                <p>BS in Computer Engineering at University of Illinois at Chicago<</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-column">
+                    <h3 class="title">Experience</h3>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> <span>Aug 2017 - May 2022</span></div>
+                                <h3>Self Driving Car - Mechatronics Embedded Design (ECE 454)</h3>
+                                <p>Lead a team of 4 to design and develop an RC car to follow a line on a track. The car includes a DC motor for the four wheel drive, Servo for steering, and a Line camera for track detection.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="education-content">                            
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> <span>Aug 2021 - May 2022 </span></div>
+                                <h3>Automated Watering System 
+                                    UIC Senior Design </h3>
+                                <p>Work in a four-student team to prototype a device that water specified plants by taking moisture levels, outdoor weather conditions, and plant information into account. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
+<!-- -----------------------skills section---------------------- -->
+        <section class="skills" id="skills">
+            <h2 class="heading">My <span>Skills</span></h2>
+
+            <div class="skills-row">
+                <div class="skills-column">
+                    <h3 class="title">Coding Skills</h3>
+
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>HTML <span>20%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>CSS <span>20%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>JavaScript <span>20%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Python <span>75%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <h3 class="title">Professional Skills</h3>
+
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>HTML <span>20%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>CSS <span>20%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>JavaScript <span>20%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Python <span>75%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
 <!-- ---------------services----------- -->
         <div id="services">
             <div class="container">
@@ -284,13 +420,51 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
 <!-- -----------------contact-------------- -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Message <span>Me</span></h2>
+
+            <form  name="submit-to-google-sheet" action="">
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="Email" placeholder="Email Address" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="number" name="Mobile" placeholder="Mobile Number" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="Subject" placeholder="Email Subject" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+                <div class="textarea-field">
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <span class="focus"></span>
+                </div>
+
+                <div class="btn-box btns">
+                    <button type="submit" class="btn btn2">Submit</button>
+                </div>
+            </form>
+            <span id="msg"></span>
+        </section>
+
+
+
         <div id="contact">
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
+                        <h1 class="sub-title">Contact <span>Me</span></h1>
                         <p><i class="fas fa-paper-plane"></i> 28aibarra@gmail.com</p>
                         <p><i class="fas fa-phone-square-alt"></i> (773) 387-8485</p>
                         <div class="social-icons">
@@ -300,7 +474,7 @@
                             <!-- <a href=""><i class="fab fa-twitter-square"></i></a>
                             <a href=""><i class="fab fa-instagram"></i></a> -->
                         </div>
-                        <div class="dropdown">
+                        <!-- <div class="dropdown">
                             <button class="btn btn2">CV <i class="fa fa-angle-down" aria-hidden="true"></i></button>
                             <div class="dropdown-content">
                                 <a href="portfolio-assets/Personal-files/Anthony_Ibarra-cv.pdf" target="_blank"  class="btn btn3">Open CV</a>
@@ -313,24 +487,18 @@
                                 <a href="portfolio-assets/Personal-files/Resume.pdf" target="_blank"  class="btn btn3">Open Resume</a>
                                 <a href="portfolio-assets/Personal-files/Resume.pdf" download class="btn btn3">Download Resume</a>
                             </div>
-                        </div>
+                        </div> -->
                         
-                    </div>
-                    <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2" style="margin: 20px 20px; padding: 14px 20px;">Submit</button>
-                        </form>
-                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <!-- <p>Copyright © Kevin. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p> -->
-            </div>
+
+
         </div>
+        <div class="copyright">
+            <!-- <p>Copyright © Kevin. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p> -->
+        </div>
+        
         <script src="script.js"></script>
         <!-- <script src="WEB/vanilla-tilt.js"></script> -->
         

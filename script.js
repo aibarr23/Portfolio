@@ -1,13 +1,5 @@
 console.log('test');
 
-// toggle icon navbar
-// let menuIcon = document.querySelector('#menu-icon');
-// let navbar = document.querySelector('.navbar');
-// menuIcon.onclick =() => {
-//     menuIcon.classList.toggle('bx-x');
-//     navbar.classList.toggle('active');
-// }
-
 // scroll sections
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav ul li');
@@ -20,12 +12,10 @@ window.onscroll = () => {
         let id = sec.getAttribute('id');
 
         if(top >= offset && top < offset + height){
-            // active navbar links
             navlinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
-            // active sections for animation on scroll
             sec.classList.add('show-animate');
         }
         // if want to use animation that repeats on scroll use this
@@ -151,7 +141,6 @@ function showmore(){
     work.style.display = "flex";//used to be block
     button1.style.display = "block";
     button2.style.display = "none";
-    // legend.style.display = "flex";
 }
 function showless(){
     work.style.display = "none";
@@ -163,110 +152,6 @@ function showless(){
 
 
 
-// // ---------------------showcase work-------------------
-// document.addEventListener("mousemove", e => {
-//     var layer = document.querySelector('.game-feature-box');
-//     var z = e.clientX;
-//     var o = e.clientY;
-//     var x = (0.0*(z/36)-20+20);
-//     var y = (0.0*(-o/36)+10-10);
-//     var a = (z-400)*0.2;
-//     var b = (o-300)*0.2;
-
-//     let query = window.matchMedia("(min-width: 600px");
-
-//     if(query.matches){
-//         layer.style = "transform: perspective(2000px) translate("+a/10+"px,"+b/10+"px) rotateX("+y+"deg) rotateY("+x+"deg);";
-//     }
-
-// });
-
-
-
-
-// -----------------------feature slider-----------------------
-// const track = document.querySelector('.feature_track');
-// const slides = Array.from(track.children);
-// const nextButton = document.querySelector('.feature_button--right');
-// const prevButton = document.querySelector('.feature_button--left');
-// const dotsNav = document.querySelector('.feature_nav');
-// const dots = Array.from(dotsNav.children);
-
-// const slideWidth = slides[0].getBoundingClientRect().width;
-
-// const setSlidePosition = (slide, index) => {
-//     slide.style.left = slideWidth * index + 'px';
-// };
-// slides.forEach(setSlidePosition);
-
-// const moveToSlide = (track, currentSlide, targetSlide) => {
-//     track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
-//     currentSlide.classList.remove('current-slide');
-//     targetSlide.classList.add('current-slide');
-// }
-
-// const updateDots = (currentDot, targetDot) => {
-//     currentDot.classList.remove('current-slide');
-//     targetDot.classList.add('current-slide');
-// }
-
-// const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
-//     if (targetIndex === 0) {
-//         prevButton.classList.add('is-hidden');
-//         nextButton.classList.remove('is-hidden');
-//     }else if (targetIndex === slides.length - 1){
-//         prevButton.classList.remove('is-hidden');
-//         nextButton.classList.add('is-hidden');
-//     }else {
-//         prevButton.classList.remove('is-hidden');
-//         nextButton.classList.remove('is-hidden');
-//     }
-// }
-
-// prevButton.addEventListener('click', e => {
-//     const currentSlide = track.querySelector('.current-slide');
-//     const prevSlide = currentSlide.previousElementSibling;
-//     const currentDot = dotsNav.querySelector('.current-slide');
-//     const prevDot = currentDot.previousElementSibling;
-//     const prevIndex = slides.findIndex(slide => slide === prevSlide);
-
-//     moveToSlide(track, currentSlide, prevSlide);
-//     updateDots(currentDot, prevDot);
-//     hideShowArrows(slides, prevButton, nextButton, prevIndex);
-// });
-
-
-// nextButton.addEventListener('click', e => {
-//     const currentSlide = track.querySelector('.current-slide');
-//     const nextSlide = currentSlide.nextElementSibling;
-//     const currentDot = dotsNav.querySelector('.current-slide');
-//     const nextDot = currentDot.nextElementSibling;
-//     const nextIndex = slides.findIndex(slide => slide === nextSlide);
-
-//     moveToSlide(track, currentSlide, nextSlide);
-//     updateDots(currentDot, nextDot);
-//     hideShowArrows(slides, prevButton, nextButton, nextIndex);
-// })
-
-// dotsNav.addEventListener('click', e => {
-
-//     const targetDot = e.target.closest('button');
-
-//     if (!targetDot)return;
-
-//     const currentSlide = track.querySelector('.current-slide');
-//     const currentDot = dotsNav.querySelector('.current-slide');
-//     const targetIndex = dots.findIndex(dot => dot === targetDot);
-//     const targetSlide = slides[targetIndex];
-
-//     moveToSlide(track, currentSlide, targetSlide);
-//     updateDots(currentDot, targetDot);
-//     hideShowArrows(slides, prevButton, nextButton, targetIndex);
-    
-// })
-
-
-
 
 
 
@@ -274,14 +159,12 @@ function showless(){
 // ------------------------extra work----------------------
 const filt = document.getElementsByClassName("work-legend li");
 var listes = document.getElementsByClassName("list");
-// filt.addEventListener("onclick",filterEd());
 
 function filterEd(){
     for(lis of listes){
         lis.classList.remove("project-filter-active");
     }
     event.currentTarget.classList.add('project-filter-active');
-    // filt.siblings().remove('project-filter-active');
 }
 
 

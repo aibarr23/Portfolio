@@ -171,6 +171,15 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+
+
+
+
+
+
+
+
+
 /* ------------ home ---------------- */
 .home{
     display: flex;
@@ -403,8 +412,6 @@ span{
     margin: 3rem 12% 3rem;
 }
 
-
-
 .row{
     display: flex;
     justify-content: center;
@@ -472,6 +479,14 @@ span{
     width: 100%;
 }
 
+
+
+
+
+
+
+
+
 /* ------------accordion about------- */
 .wrapper {
     max-width: 69rem;
@@ -490,6 +505,7 @@ span{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-size: 1.5rem;
   
     contain: content;
     /* added padding to prevent issue with outlines */
@@ -503,6 +519,11 @@ span{
     .accordion {
       flex-direction: row;
       height: 30rem;
+    }
+  }
+  @media (max-width: 44rem){
+    .accordion{
+        height: 55rem;
     }
   }
   
@@ -543,6 +564,9 @@ span{
     --_panel-color: hsl(350, 70%, 50%);
   }
   .accordion-panel:nth-of-type(5) {
+    --_panel-color: hsl(87, 43%, 40%);
+  }
+  .accordion-panel:nth-of-type(6) {
     --_panel-color: hsl(20, 70%, 50%);
   }
   
@@ -559,8 +583,10 @@ span{
     outline: 3px solid var(--_panel-color);
     outline-offset: 4px;
   }
-  
-  .accordion-content > p {
+  .accordion-content ul{
+    color: white;
+  }
+  .accordion-content > ul {
     transform: translateY(2rem);
     opacity: 0;
   
@@ -568,12 +594,12 @@ span{
   }
   
   @media (prefers-reduced-motion: no-preference) {
-    .accordion-panel:has([aria-expanded="true"]) p {
+    .accordion-panel:has([aria-expanded="true"]) ul {
       transition: transform 500ms 500ms, opacity 500ms 500ms;
     }
   }
   
-  .accordion-panel:has([aria-expanded="true"]) p {
+  .accordion-panel:has([aria-expanded="true"]) ul {
     transform: translateY(0);
     opacity: 1;
   }
@@ -581,6 +607,7 @@ span{
   .accordion-title {
     font-size: 1.5rem;
     font-weight: 700;
+    color: var(--white-color);
   
     position: relative;
     isolation: isolate;
@@ -636,6 +663,10 @@ span{
     border-radius: 50%;
     z-index: 10;
   }
+
+
+
+
 
 
 /* -----------education------------- */
@@ -718,6 +749,8 @@ span{
 
 
 
+
+
 /* ---------------skills section------------- */
 .skills{
     min-height: auto;
@@ -783,29 +816,68 @@ span{
     background: var(--main-color);
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
-    width: 90%;
+    width: 80%;
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
     width: 90%;
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
-    width: 90%;
+    width: 75%;
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
-    width: 90%;
+    width: 80%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+    width: 75%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span{
+    width: 80%;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
-    width: 90%;
+    width: 70%;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
-    width: 90%;
+    width: 65%;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
-    width: 90%;
+    width: 50%;
 }
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
-    width: 90%;
+    width: 60%;
 }
+.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span{
+    width: 60%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(6) .bar span{
+    width: 75%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(7) .bar span{
+    width: 45%;
+}
+.skills-column:nth-child(3) .skills-content .progress:nth-child(1) .bar span{
+    width: 70%;
+}
+.skills-column:nth-child(3) .skills-content .progress:nth-child(2) .bar span{
+    width: 75%;
+}
+.skills-column:nth-child(3) .skills-content .progress:nth-child(3) .bar span{
+    width: 20%;
+}
+.skills-column:nth-child(3) .skills-content .progress:nth-child(4) .bar span{
+    width: 20%;
+}
+.skills-column:nth-child(3) .skills-content .progress:nth-child(5) .bar span{
+    width: 20%;
+}
+.skills-column:nth-child(3) .skills-content .progress:nth-child(6) .bar span{
+    width: 5%;
+}
+.skills-column:nth-child(3) .skills-content .progress:nth-child(7) .bar span{
+    width: 8%;
+}
+
+
+
 
 
 
@@ -853,6 +925,20 @@ span{
     color: var(--bg-color);
     transform: translateY(-10px);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------------portfolio------------ */
 #portfolio{
     padding: 50px 0;
@@ -1090,6 +1176,13 @@ span{
 }
 
 
+
+
+
+
+
+
+
 /* ------------------showcase work----------------- */
 .show-work{
     display: block;
@@ -1119,10 +1212,10 @@ span{
     border-bottom-left-radius: 20px;
     box-shadow: 0 0 0.5em 0 var(--main-color);
     padding: 14px 20px;
-    margin: 12px 0px;
+    margin: 12px 5%;
     overflow-y: scroll;
     overflow-x: hidden;
-
+    width: 90%;
 
     display: flex;
     justify-content: center;
@@ -1139,7 +1232,7 @@ span{
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 1.5rem;
     letter-spacing: 0.5px;
     font-weight: 400;
     cursor: pointer;
@@ -1296,8 +1389,6 @@ span{
 }
 .is-hidden {display: none;}
 
-
-
 .showcase-work {
     
     width: 100%;
@@ -1339,6 +1430,12 @@ span{
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+
+
+
+
+
 
 
 /* --------------contact section---------------- */
@@ -1411,6 +1508,12 @@ span{
     flex-wrap: wrap;
     flex-direction: row;
 }
+
+
+
+
+
+
 
 /* --------------contact-------------- */
 .contact-left{
@@ -1540,6 +1643,14 @@ form .btn2{
 }
 
 
+
+
+
+
+
+
+
+
 /* ----------------button to the top----------------- */
 #myBtn {
     display: none;
@@ -1564,6 +1675,15 @@ form .btn2{
 
 
 
+
+
+
+
+
+
+
+
+
 /* ----------------------Copyright------------------ */
 .copyright{
     width: 100%;
@@ -1577,6 +1697,17 @@ form .btn2{
     color: var(--text2-color);
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* ----------------css for small screens--------------- */
 nav .fas{
     display: none;
@@ -1588,7 +1719,7 @@ nav .fas{
         background-image: url(./portfolio-assets/hannah-troupe-0FQneB1VjaM-unsplash.jpg);
     }
     .home-content{
-        margin-top: 100%;
+        margin-top: 18%;
         font-size: 25px;
     }
     .home-content h1{
@@ -1624,7 +1755,7 @@ nav .fas{
         font-size: 40px;
     }
     .about-col-1, .about-col-2{
-        flex-basis: 100%;
+        flex-basis: 84%;
     }
     .about-col-1{
         margin-bottom: 30px;
@@ -1666,7 +1797,7 @@ nav .fas{
 }
 @media (max-width: 991px){
     .header{
-        padding: 2rem 4%;
+        padding: 1rem 4%;
     }
     section{
         padding: 10rem 4% 2rem;
@@ -1681,6 +1812,7 @@ nav .fas{
 @media (max-width: 768px){
     .header{
         background: var(--bg-color);
+        padding: 2rem 4%;
     }
     a.logo{
         z-index: 1;
@@ -1771,6 +1903,17 @@ nav .fas{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* ------animation-------- */
 @keyframes homeBgText{
 
@@ -1810,6 +1953,22 @@ nav .fas{
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---------------------THREE Image Transition-------------------- */
 

@@ -531,13 +531,16 @@ span{
     padding-right: calc(var(--_panel-padding) * 4);
     border-radius: calc(((var(--_panel-padding) * 2) + var(--_button-size)) / 2);
   }
+  .accordion-panel:hover{
+    transform: scale(1.04);
+  }
   .accordion-panel p{
     color: var(--white-color);
   }
   
   @media (prefers-reduced-motion: no-preference) {
     .accordion-panel {
-      transition: flex-basis 500ms, flex-grow 500ms;
+      transition: flex-basis 500ms, flex-grow 500ms, transform 0.2s ease;
     }
   }
   
@@ -1041,6 +1044,7 @@ span{
     outline: .1rem solid var(--main-color);
     outline-offset: -1.5rem;
     cursor: pointer;
+    transition: 0.5s;
 }
 .container .project-container .project:hover{
     outline: .2rem solid var(--text2-color);
@@ -1049,6 +1053,7 @@ span{
 .container .project-container .project img{
     height: 25rem;
     border-radius: 10px;
+    transition: 0.5s;
 }
 .container .project-container .project:hover img{
     transform: scale(.9);

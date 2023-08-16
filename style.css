@@ -1213,25 +1213,24 @@ span{
     cursor: pointer;
     z-index: 0;
 }
-.card:hover {
-
-    .back-card{
-        transition: transform: 200ms cubic-bezier(0.21, 1, 0.81, 1), opacity: 100ms linear;
-        opacity: 1;
-        transform: scale(.9, 1.2);
-    }
-    .back-card div{
-        display: grid ;
-    }
-    .front-card{
-        transform:  translateY(-6%) scale(.95);
-    }
-    .front-card .rep-info .overlay{
-        height: 15%;
-        width: 100%;
-        z-index: 1;
-    }
+.card:hover .back-card{
+    transition: transform: 200ms cubic-bezier(0.21, 1, 0.81, 1), opacity: 100ms linear;
+    opacity: 1;
+    transform: scale(.9, 1.2);
 }
+.card:hover .back-card div{
+    display: grid ;
+}
+.card:hover .front-card{
+    transform:  translateY(-6%) scale(.95);
+}
+.card:hover .front-card .rep-info .overlay{
+    height: 15%;
+    width: 100%;
+    z-index: 1;
+}
+
+
 .front-card .rep-info img{
     position: relative;
     object-fit: cover;

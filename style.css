@@ -809,7 +809,7 @@ span{
     border-radius: .3rem;
     background: var(--main-color);
 }
-.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+/* .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
     width: 80%;
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
@@ -868,7 +868,7 @@ span{
 }
 .skills-column:nth-child(3) .skills-content .progress:nth-child(7) .bar span{
     width: 8%;
-}
+} */
 
 
 

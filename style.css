@@ -20,7 +20,7 @@
 }
 @supports (scrollbar-color: red blue){
     *{
-        scrollbar-color: rgb(34, 39, 34)rgb(216, 233, 216));
+        scrollbar-color:( rgb(34, 39, 34)rgb(216, 233, 216));
         scrollbar-width: auto;
     }
 }
@@ -1215,8 +1215,9 @@ span{
     z-index: 0;
 }
 .card:hover .back-card{
-    transition: transform: 200ms cubic-bezier(0.21, 1, 0.81, 1), opacity: 100ms linear;
-    opacity: 1;
+   
+    opacity: 100ms linear;
+
     transform: scale(.9, 1.2);
 }
 .card:hover .back-card div{

@@ -5,119 +5,317 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="x-icon" href="portfolio-assets/tab-logo.svg">
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
-        <!-- <script src="script.js" defer></script> -->
         <script src="https://kit.fontawesome.com/2e5d07ab20.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img src="portfolio-assets/logo.PNG" class="logo">
-                    <ul id="sidemenu">
-                        <!-- <li><a href="#header">Home</a></li> -->
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <!-- <li><a href="#contact">CV / Resume</a></li> -->
-                        <i class="fas fa-times" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fas fa-bars" onclick="openmenu()"></i>
-                </nav>
-                <div class="header-text">
-                    <p>Computer Engineer</p>
-                    <h1>Hi, I'm <span>Anthony</span><br>Ibarra from Chicago.</h1>
+        <button onclick="topFunction()" id="myBtn" title="Go to top" >Top</button>
+        
+<!-- -----------------header---------------- -->
+        <header class='header'>
+            <a href="#" class="logo"><span >A</span>I. </a>
+            <nav class="navbar">
+                <ul id="sidemenu">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <span class="animate" style="--i:2;"></span>
+                    <i class="fas fa-times"  onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-moon bx-tada' id="darkMode-icon" style="padding-right: 8px;"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </header>
+
+
+<!-- -------------------home---------------- -->
+        <section class="home show-animate" id="home">
+            <div class="home-content">
+                <h1>Hi, I'm <span>Anthony</span><br>Ibarra</h1>
+                <div class="text-animate">
+                    <h3>Electrical and Computer Engineer</h3>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn2">Resume <i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                    <div class="dropdown-content">
-                        <a href="portfolio-assets/Personal-files/Resume.pdf" target="_blank"  class="btn btn3">Open Resume</a>
-                        <a href="portfolio-assets/Personal-files/Resume.pdf" download class="btn btn3">Download Resume</a>
+                <h4>Master of Science: Electrical and Computer Engineering</h4>
+                <div class="btn-box">
+                    <div class="dropdown">
+                        <button class="btn btn2">Resume <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                        <div class="dropdown-content">
+                            <a href="portfolio-assets/Personal-files/Resume.pdf" target="_blank"  class="btn btn3">Open Resume</a>
+                            <a href="portfolio-assets/Personal-files/Resume.pdf" download class="btn btn3">Download Resume</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn2">CV <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                        <div class="dropdown-content">
+                            <a href="portfolio-assets/Personal-files/Anthony_Ibarra-cv.pdf" target="_blank"  class="btn btn3">Open CV</a>
+                            <a href="portfolio-assets/Personal-files/Anthony_Ibarra-cv.pdf" download  class="btn btn3">Download CV</a>
+                        </div>                                
                     </div>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn2">CV <i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                    <div class="dropdown-content">
-                        <a href="portfolio-assets/Personal-files/Anthony_Ibarra-cv.pdf" target="_blank"  class="btn btn3">Open CV</a>
-                        <a href="portfolio-assets/Personal-files/Anthony_Ibarra-cv.pdf" download  class="btn btn3">Download CV</a>
-                    </div>                                
-                </div>
             </div>
-        </div>
+            <div class="home-imgHover"></div>
+        </section>
+
         
 <!-- ---------------about-------------- -->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="portfolio-assets/user.jpg">
+        <section class="about" id="about">
+            <h2 class="heading">About<span> Me</span></h2>
+
+            <div class="about-img">
+                <img src="portfolio-assets/user.jpg">
+                <span class="circle-spin"></span>
+            </div>
+
+            <div class="about-content">
+                <h3>Electrical and Computer Engineer</h3>
+                <p>I am someone who has an interest in learning and improving. 
+                    I am a hard worker, even more so when it involves my own personal 
+                    interests. I desire to increase the quality of what I enjoy being a part of,
+                    as someone that strives to be an Engineer that is complete and efficient in their work
+                    to bring out the growth to what we as Engineers can put our hands on.
+                </p>
+                <h3>Core Focus</h3>
+                <p>Control, Robotics/Mechatronics, and Embedded Systems</p>
+                <p>AI & ML & NN etc.</p>                
+                <!-- <p>Computer and Networked Systems</p> -->
+                <p>Signal Processing</p>
+                <!-- <p>Data Science and Engineering</p> -->
+                <p>Power Electronics and Systems</p>
+            </div>
+           
+        </section>
+
+
+<!-- ----------------education-------------- -->
+        <section class="education" id="education">
+            <h2 class="heading">My <span>Journey</span></h2>
+
+            <div class="education-row">
+                <div class="education-column">
+                    <h3 class="title">Education</h3>
+
+                    <div class="education-box">
+                        <div class="education-content">                            
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> <span>Jan 2023 - May 2025</span></div>
+                                <h3>Master of Science </h3>
+                                <p>MS: Electrical & Computer Engineering -UIC</p>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> <span>Aug 2017 - May 2022</span></div>
+                                <h3>Bachelor of Science </h3>
+                                <p>BS: Computer Engineering -UIC</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>I am someone who has an interest in learning and improving. 
-                            I am a hard worker, even more so when it involves my own personal 
-                            interests. I desire to increase the quality of what I enjoy being a part of,
-                            as someone that strives to be an Engineer that is complete and efficient in their work
-                            to bring out the growth to what we as Engineers can put our hands on.
-                        </p>
+                </div>
+                <div class="education-column">
+                    <h3 class="title">Volunteering</h3>
+
+                    <div class="education-box">
+                        <div class="education-content">                            
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> <span>Aug 2017 - May 2025</span></div>
+                                <h3>TTC at UIC Recreational Center</h3>
+                                <p> Assist with opening, closing, and setting up equipment for club activities. Help with practice and training for future tournaments or events when possible.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="education-content">                            
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> <span>Aug 2014 - May 2017 </span></div>
+                                <h3>HighSchool Heroes</h3>
+                                <p> Teaching 1st-3rd graders about society through a specified curriculum composed into four sections. Volunteers are placed in a group of 3 to complete said curriculum  in a concise time frame for each section.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-column">
+                    <h3 class="title">Experience</h3>
+
+                    <div class="education-box">
+                        <div class="education-content">                            
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> <span>Aug 2017 - present</span></div>
+                                <h3>Electronics Repair | Disassembly</h3>
+                                <p>Repair any electronic tools devices given, provided, or discarded for repair</p>
+                                <p>Disassembly of devices:  3-4 desktop computers, wire Harnesses, dvd players & floppydisk reader, portable dvd player</p>
+                                <p>Repairs: 1. Headlamp used in construction, 2. A powertool battery pack, 3. Gampad Controllers</p>
+                            </div>
+                        </div>
+                        <div class="education-content">                            
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> <span>Jan 2025 - May 2025 </span></div>
+                                <h3>Research Project (Assistive Hearing for hearing impaired motorcycle riders)
+                                  |  Audio and Acoustic Signal Processing </h3>
+                                <p>Complete a research paper that is roughly the scope and style but not
+                                    necessarily the format of a Signal Processing Society conference paper. Collect
+                                    data from past and current research paper or articles; show analysis and results 
+                                    from method proposed.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="education-content">                            
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> <span>Aug 2024 - Dec 2024 </span></div>
+                                <h3>Series Brush DC Motor Modeling
+                                    Electromechanical Energy Conversion</h3>
+                                <p>
+                                    Replicate the graphs of speed, current, power, and efficiency vs. load torque
+                                    Use LTSpice to model the DC motor as an electrical circuit to obtain 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> <span>Jan 2023 - May 2023</span></div>
+                                <h3>Self Driving Car - Mechatronics Embedded Design </h3>
+                                <p>Lead a team of 4 to design and develop an RC car to follow a line on a track. The car includes a DC motor for the four wheel drive, Servo for steering, and a Line camera for track detection.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="education-content">                            
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i> <span>Aug 2021 - May 2022 </span></div>
+                                <h3>Automated Watering System 
+                                    UIC Senior Design </h3>
+                                <p>Work in a four-student team to prototype a device that water specified plants by taking moisture levels, outdoor weather conditions, and plant information into account. </p>
+                            </div>
+                        </div>
                         
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                            <p class="tab-links" onclick="opentab('interest')">Interests</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- -----------------------skills section---------------------- -->
+<!-- <section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+    
+    <div class="skills-row">
+                <div class="skills-column">
+                    <h3 class="title">Professional Skills</h3>
+                
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>Problem-solving <span>80%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Reliability <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Project Managment & Project Design <span>75%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Communication <span>80%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Leadership & Teamwork<span>75%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Time Managment <span>75%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
                         </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Programming</span><br>Python, C/C++/C# , object oriented programming, Assembly,
-                                     AI (artificial intelligence) & ML(machine learning) algorithms, Neural Networks
-                                    </li>
-                                <li><span>Software</span><br>VS Code, GitHub, MATLAB, Ubuntu(WSL), Pytorch, Tensorflow, keras, 
-                                    Solidworks, Altium Designer, Anaconda, Mathematica, Quartus,
-                                    code-composer, Arduino IDE, VNC viewer(raspberry Pi), (normal understanding of Microsoft
-                                    Word, PowerPoint, Excel, etc.)
-                                </li>
-                                <li><span>Speach</span><br>Proficient in spanish (can read, write, and have normal conversation)
-                                </li>
-                            </ul>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <h3 class="title">Engineering Skills</h3>
+                
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>Soldering <span>65%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Testing & Troubleshooting <span>60%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Handtools <span>45%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Electric Layouts <span>60%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Control Systems <span>60%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Automation <span>65%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>PCB Design <span>45%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
                         </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>2021-2022</span><br>Senior Design: Automated Watering System</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>Jan 2023 - present</span><br>MS in Computer Engineering at University of Illinois at Chicago</li>
-                                <br>
-                                <li><span>Aug 2017 - May 2022</span><br>BS in Computer Engineering at University of Illinois at Chicago</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="interest">
-                            <ul>
-                                <li><span>Research & Development & Design</span><br></li>
-                                <li><span>AI & ML</span><br></li>
-                                <li><span>Automation</span><br></li>
-                                <li><span>Deep Learning & Neural Networks</span><br></li>
-                                <li><span>Efficiency</span><br></li>
-                                <li><span>Control, Embedded, Robotics and Mechatronics</span><br></li>
-                                <!-- <li><span>Robotics</span><br></li> -->
-                                <!-- <li><span>Embedded</span><br></li> -->
-                                <li>Table Tennis<br></li>
-                                <li>Video Game creation<br></li>
-                            </ul>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <h3 class="title">Programming Skills</h3>
+
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>C & C++ <span>70%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Python <span>75%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>CSS <span>20%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>JavaScript <span>20%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>HTML <span>20%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Rust <span>5%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>PLC <span>8%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section> -->
+
+
+
+
 <!-- ---------------services----------- -->
         <div id="services">
             <div class="container">
-                <h1 class="sub-title">My Services</h1>
+                <h1 class="sub-title">My <span>Services</span></h1>
                 <div class="services-list">
                     <div>
                         <i class="fa-solid fa-code"></i>
@@ -128,7 +326,7 @@
                                programming projects and lab exercises.</p>
                         <p>Problem representation; rule-based problem-solving methods; heuristic search techniques. 
                             Application to expert systems, theorem proving, language understanding.</p>
-                        <!-- <a href="#">Learn more</a> -->
+                        
                     </div>
                     <div>
                         <i class="fa-solid fa-microchip"></i>
@@ -136,11 +334,10 @@
                         <p>Embedded systems and microcontroller; instruction set; data representations; 
                             assembly programming; mixed C/assembly programming; memory organization;
                              interrupt processing; I/O devices and interfacing; programming. </p>
-                        <!-- <p> In a practical embedded system, such a device is implemented on a digital/mixed-signal computational platform and is an integral part of the overall system that is typically electrical and/or mechanical.</p> -->
-                        <!-- <a href="#">Learn more</a> -->
+                    
                     </div>
                     <div>
-                        <i class="fa-solid fa-microchip"></i>
+                        <i class="fa-regular fa-object-group"></i>
                         <h2>Control Systems</h2>
                         <p>Transfer function; block diagrams; flow graphs;
                              state space canonic forms; stability analysis;
@@ -151,8 +348,7 @@
                          solutions to state equations; stability; reachabilty/controllability,
                           state feedback, tracking; observability, observers, output feedback;
                            optimal control and estimation.</p>
-                        <!-- <p>The area of control will help you learn how to design devices (with underlying algorithms) that modulate the input of a system in order to produce the desired output response.</p> -->
-                        <!-- <a href="#">Learn more</a> -->
+                        
                     </div>
                     <div>
                         <i class="fa-solid fa-robot"></i>
@@ -160,174 +356,727 @@
                         <p>Kinematic and dynamic modeling of robots; configuration space;
                              motion planning algorithms; control of robots; sensors and perception;
                               reasoning; mobile robots.</p>
-                        <!-- <p>Robotics is an important application area for control and embedded systems; they are widely used in industries ranging from manufacturing to pharmaceuticals; they enable safe operation of cars, airplanes and the power grid/systems, and they save lives through medical devices.</p> -->
-                        <!-- <a href="#">Learn more</a> -->
+                       
                     </div>
                 </div>
             </div>
         </div>
+
+        
+        <svg width="0" height="0" class="hidden">
+        <symbol
+            id="boat"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 35.38 36.29"
+        >
+            <polygon
+            points="16.72 .72 16.72 5.4 10.6 5.4 13.66 3.06 10.6 .72 16.72 .72"
+            ></polygon>
+            <path
+            d="M16.72,6.12h-6.12c-.31,0-.58-.2-.68-.49-.1-.29,0-.61,.24-.8l2.32-1.77-2.32-1.77c-.24-.19-.34-.51-.24-.8,.1-.28,.37-.48,.68-.48h6.12c.39,0,.71,.32,.71,.71V5.4c0,.39-.32,.71-.71,.71h0Zm-4.01-1.42h3.3V1.44h-3.3l1.38,1.06c.18,.14,.28,.34,.28,.57s-.1,.43-.28,.57l-1.38,1.06h0Z"
+            ></path>
+            <polygon points="16.72 .72 34.64 24.68 16.72 24.68 16.72 .72"></polygon>
+            <path
+            d="M34.65,25.4H16.72c-.39,0-.71-.32-.71-.71V.72c0-.31,.2-.58,.49-.68,.29-.1,.61,0,.8,.25l17.87,23.89c.12,.13,.2,.3,.2,.5,0,.39-.32,.71-.71,.71h0Zm-17.21-1.42h15.78L17.43,2.87V23.97h.01Z"
+            ></path>
+            <polygon
+            points="1.02 24.68 13.66 24.68 13.66 8.42 1.02 24.68"
+            ></polygon>
+            <path
+            d="M13.66,25.4H1.02c-.27,0-.52-.16-.64-.4s-.09-.54,.08-.75L13.09,7.98c.19-.24,.51-.34,.8-.24,.29,.1,.48,.37,.48,.68V24.68c0,.39-.32,.71-.71,.71h0Zm-11.18-1.42H12.94V10.5S2.48,23.97,2.48,23.97Z"
+            ></path>
+            <path
+            d="M1.02,27.63H34.64s1.6,7.95-17.92,7.95S1.02,27.63,1.02,27.63Z"
+            ></path>
+            <path
+            d="M16.72,36.29c-8.68,0-14.06-1.55-15.98-4.61-1.38-2.19-.41-4.27-.36-4.36,.12-.25,.37-.41,.64-.41H34.64c.34,0,.63,.24,.7,.57,.02,.08,.38,1.99-1.28,4.02-2.6,3.18-8.43,4.79-17.34,4.79ZM1.53,28.35c-.13,.54-.24,1.55,.43,2.6,1.14,1.79,4.63,3.92,14.76,3.92s14.64-2.32,16.23-4.26c.73-.89,.94-1.73,.99-2.26H1.53Z"
+            ></path>
+        </symbol>
+        <symbol
+            id="reef"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 36 36.23"
+        >
+            <path
+            d="M13.59,17.47c.74-.31,1.24-.99,1.72-1.63s1.02-1.3,1.77-1.56c.76-.26,1.77,.09,1.92,.88,.09,.46-.14,.93-.44,1.3-.99,1.23-2.62,1.68-4.1,2.23s-3.06,1.45-3.42,2.98c-.55,2.29,1.92,4.62,1.12,6.84-.53,1.44-2.29,2.22-2.64,3.72-.25,1.05,.19,2.41-.67,3.07-.78,.59-2-.12-2.22-1.07s.26-1.92,.84-2.7c.58-.78,1.29-1.49,1.65-2.4,.5-1.26,.24-2.7-.16-4-.4-1.3-.93-2.59-.95-3.96-.02-1.36,.63-2.85,1.91-3.31,1.16-.42,2.52,.09,3.65-.39h.02Z"
+            ></path>
+            <path
+            d="M8.2,36.22c-1.03,0-2.02-.81-2.26-1.83-.23-1.01,.09-2.11,.96-3.29,.16-.22,.33-.43,.5-.64,.43-.53,.83-1.03,1.06-1.59,.45-1.14,.14-2.48-.18-3.53-.08-.26-.17-.52-.25-.78-.35-1.07-.71-2.18-.73-3.37-.02-1.55,.7-3.39,2.38-4,.55-.2,1.11-.22,1.53-.22h.96c.36,0,.77-.02,1.12-.17,.55-.24,.97-.79,1.42-1.38,.57-.76,1.19-1.5,2.13-1.82,.24-.08,.49-.12,.76-.12,1.06,0,1.93,.63,2.1,1.54,.12,.61-.08,1.26-.58,1.88-.98,1.23-2.49,1.77-3.83,2.24-.2,.07-.39,.14-.59,.21-1.74,.64-2.74,1.48-2.98,2.48-.21,.89,.17,1.86,.58,2.9,.48,1.23,1.03,2.62,.52,4.02-.3,.83-.89,1.42-1.45,2-.52,.53-1.02,1.04-1.16,1.63-.07,.29-.07,.63-.07,1,0,.81-.02,1.83-.86,2.47-.31,.24-.69,.36-1.08,.36h0Zm3.02-17.82c-.33,0-.71,.02-1.05,.14-1.01,.37-1.45,1.62-1.44,2.63,0,.98,.33,1.93,.66,2.95,.09,.27,.18,.54,.26,.81,.39,1.27,.75,2.92,.14,4.47-.3,.76-.8,1.37-1.27,1.96-.16,.2-.32,.39-.47,.59-.61,.82-.85,1.53-.72,2.11,.09,.37,.51,.73,.87,.73,.09,0,.16-.02,.22-.07,.26-.2,.29-.64,.29-1.34,0-.43,0-.88,.11-1.32,.23-.98,.92-1.69,1.53-2.31,.48-.49,.94-.95,1.13-1.49,.33-.89-.08-1.92-.5-3.01-.47-1.19-.95-2.43-.64-3.75,.36-1.49,1.66-2.67,3.87-3.48,.2-.07,.4-.15,.6-.22,1.27-.45,2.46-.88,3.19-1.79,.22-.27,.33-.54,.29-.72-.05-.24-.4-.38-.7-.38-.1,0-.2,.02-.29,.05-.55,.19-.99,.73-1.43,1.31-.53,.7-1.11,1.47-2.01,1.85-.58,.25-1.18,.28-1.68,.28h-.96Z"
+            ></path>
+            <path
+            d="M1.16,31.32c.61-1.03,1.84-1.65,2.38-2.71,.79-1.56-.14-3.39-1.12-4.85s-2.08-3.13-1.58-4.8c.57-1.9,2.97-2.85,3.62-4.73,.73-2.08-.95-4.54,.17-6.45,1.02-1.74,3.81-1.97,4.78-3.73,.36-.65,.41-1.42,.68-2.11s.96-1.35,1.72-1.21c.88,.16,1.18,1.32,.79,2.09s-1.2,1.25-1.93,1.75c-1.66,1.15-3.18,2.91-2.92,4.85,.15,1.13,.89,2.16,.86,3.3-.07,2.61-3.89,3.78-4.5,6.33-.4,1.66,.71,3.28,1.64,4.73,.93,1.46,1.73,3.35,.79,4.8-.62,.95-1.87,1.47-2.26,2.53-.22,.59-.12,1.25-.04,1.88s.12,1.3-.2,1.85-1.13,.89-1.67,.52c-1.44-.74-2.03-2.68-1.22-4.04h.01Z"
+            ></path>
+            <path
+            d="M2.9,36.22c-.32,0-.63-.09-.89-.26-.86-.45-1.51-1.27-1.79-2.25-.28-.96-.16-1.97,.32-2.77,.34-.58,.82-1.02,1.28-1.44,.44-.4,.85-.79,1.08-1.23,.5-.98,.16-2.29-1.08-4.12-.96-1.43-2.27-3.38-1.67-5.4,.34-1.15,1.2-1.96,2.02-2.73,.69-.66,1.35-1.27,1.61-2.03,.28-.79,.12-1.71-.05-2.69-.21-1.24-.45-2.64,.28-3.89,.61-1.04,1.66-1.58,2.67-2.11,.88-.46,1.72-.9,2.11-1.6,.16-.29,.25-.65,.35-1.03,.08-.33,.17-.66,.3-1,.34-.83,1.14-1.67,2.17-1.67,.11,0,.23,0,.34,.03,.57,.11,1.03,.47,1.31,1.02,.32,.65,.32,1.46,0,2.1-.43,.84-1.21,1.37-1.9,1.84l-.26,.18c-.87,.6-2.88,2.22-2.62,4.16,.06,.41,.21,.83,.38,1.28,.25,.66,.51,1.35,.49,2.13-.05,1.69-1.28,2.8-2.48,3.87-.93,.84-1.81,1.62-2.05,2.6-.31,1.29,.57,2.65,1.41,3.97l.13,.21c1.45,2.27,1.72,4.15,.79,5.57-.32,.5-.76,.87-1.17,1.23-.44,.38-.86,.74-1.02,1.16-.15,.39-.08,.89-.02,1.42v.12c.11,.77,.14,1.58-.28,2.3-.36,.62-1.07,1.03-1.77,1.03h.02ZM7.95,6.25c-.2,.11-.4,.22-.6,.32-.87,.46-1.69,.88-2.1,1.57-.47,.8-.29,1.83-.1,2.93,.19,1.11,.39,2.27-.01,3.4-.38,1.08-1.19,1.85-1.98,2.59-.72,.68-1.4,1.32-1.63,2.1-.41,1.37,.64,2.94,1.49,4.2,.98,1.45,2.16,3.61,1.17,5.57-.34,.67-.87,1.16-1.38,1.63-.4,.37-.78,.72-1.02,1.12-.28,.46-.34,1.06-.17,1.65,.18,.61,.58,1.12,1.1,1.39,.03,0,.05,.03,.08,.05,.01,0,.04,.03,.12,.03,.19,0,.43-.14,.53-.32,.19-.34,.18-.81,.11-1.41v-.12c-.09-.64-.19-1.37,.08-2.1,.29-.77,.89-1.29,1.43-1.75,.36-.31,.69-.59,.91-.92,.6-.92,.33-2.27-.79-4.02l-.13-.21c-.96-1.5-2.05-3.2-1.6-5.08,.34-1.41,1.43-2.39,2.48-3.33,1.01-.91,1.97-1.77,2-2.85,.01-.5-.18-1.03-.4-1.59-.19-.5-.38-1.02-.46-1.59-.15-1.09,.17-2.21,.89-3.27h-.02ZM11.61,1.43c-.3,0-.67,.34-.85,.78-.1,.25-.17,.52-.24,.81-.08,.33-.17,.68-.31,1.02,.02-.01,.04-.03,.06-.04l.27-.19c.6-.41,1.17-.79,1.43-1.3,.12-.24,.12-.58,0-.82-.1-.21-.24-.24-.29-.25h-.07Z"
+            ></path>
+            <path
+            d="M24.97,35.09c.71-.46,.58-1.67,.23-2.52-1.4-3.41-4.97-5.41-8.25-4.96-.62,.08-1.26,.26-1.72,.72-.82,.83-.81,2.39-.19,3.45,.85,1.46,2.46,2.03,3.96,2.43,1.57,.41,3.16,.75,4.76,1,.41,.06,.85,.12,1.21-.12Z"
+            ></path>
+            <path
+            d="M24.32,35.97h0c-.24,0-.47-.03-.67-.06-1.62-.25-3.24-.59-4.83-1.01-1.63-.43-3.43-1.09-4.4-2.76-.72-1.24-.81-3.19,.3-4.31,.66-.66,1.53-.85,2.13-.93,.33-.05,.68-.07,1.02-.07,3.44,0,6.65,2.2,7.99,5.47,.49,1.2,.53,2.71-.5,3.39-.29,.19-.64,.29-1.04,.29h0Zm-6.44-7.72c-.28,0-.56,.02-.83,.06-.62,.09-1.04,.25-1.3,.52-.54,.55-.58,1.73-.08,2.59,.7,1.21,2.11,1.72,3.53,2.1,1.54,.41,3.12,.74,4.68,.98,.14,.02,.3,.05,.44,.05,.18,0,.24-.04,.26-.05,.27-.18,.25-.95-.04-1.65-1.11-2.7-3.85-4.58-6.67-4.58v-.02Z"
+            ></path>
+            <path
+            d="M34.35,19.99c-.4-1.29-.98-2.58-1.98-3.49s-2.53-1.34-3.76-.76c-1.05,.5-1.68,1.63-1.85,2.78-.18,1.14,.04,2.31,.28,3.44,.3,1.37,.66,2.72,1.06,4.06,1.16,2.08,2.2,4.21,2.89,6.46,.15,.48,.26,1.01,.22,1.5,.1,.21,.2,.43,.31,.64,.12,.24,.25,.49,.46,.66,.51,.42,1.33,.21,1.78-.28,.45-.49,.62-1.17,.76-1.82,.92-4.35,1.15-8.95-.17-13.2h0Z"
+            ></path>
+            <path
+            d="M32.65,36.22h0c-.42,0-.81-.14-1.12-.39-.33-.27-.51-.63-.64-.89-.07-.14-.13-.27-.2-.41l-.11-.23c-.06-.11-.08-.24-.07-.37,.03-.33-.04-.74-.19-1.24-.58-1.9-1.48-3.91-2.83-6.32-.03-.05-.05-.09-.06-.14-.42-1.4-.79-2.79-1.08-4.11-.24-1.12-.49-2.42-.29-3.7,.23-1.52,1.07-2.75,2.25-3.31,.47-.22,.98-.33,1.52-.33,1.07,0,2.17,.44,3.02,1.2,1.25,1.12,1.85,2.71,2.19,3.81,1.21,3.88,1.27,8.44,.19,13.56-.16,.75-.36,1.54-.93,2.15-.42,.46-1.04,.73-1.64,.73h-.01Zm-.71-2.4l.04,.08c.06,.13,.12,.26,.19,.39,.08,.16,.17,.35,.27,.43,.05,.04,.12,.06,.21,.06h0c.2,0,.44-.11,.59-.27,.32-.35,.46-.9,.58-1.48,1.03-4.88,.98-9.2-.15-12.84-.46-1.49-1.03-2.5-1.78-3.17-.85-.77-2.11-1.05-2.97-.64-.88,.42-1.33,1.43-1.45,2.24-.16,1.04,.05,2.14,.28,3.18,.28,1.26,.62,2.59,1.03,3.93,1.38,2.47,2.3,4.55,2.91,6.53,.18,.59,.27,1.1,.26,1.56h-.01Z"
+            ></path>
+            <path
+            d="M31,32.48c-1.06-3.45-2.93-6.62-4.82-9.75-.42-.69-.85-1.4-1.48-1.94s-1.49-.91-2.33-.77c-1.3,.2-2.1,1.49-2.3,2.71-.33,2.05,.51,4.1,1.67,5.9,1.37,.9,2.51,2.23,3.15,3.85,.66,.66,1.36,1.3,2.1,1.89,.54,.43,1.11,.86,1.79,1.05s1.5,.1,1.99-.38c.66-.65,.5-1.69,.23-2.56h0Z"
+            ></path>
+            <path
+            d="M29.46,36.22h0c-.3,0-.59-.04-.88-.12-.83-.23-1.49-.73-2.05-1.18-.74-.6-1.46-1.25-2.15-1.94-.07-.07-.12-.15-.16-.24-.56-1.42-1.58-2.67-2.87-3.52-.08-.05-.15-.13-.21-.21-1.52-2.34-2.1-4.44-1.78-6.4,.24-1.45,1.22-3.03,2.89-3.3,.97-.15,2.06,.2,2.91,.94,.72,.63,1.2,1.41,1.62,2.11,2.05,3.39,3.84,6.47,4.89,9.91,.17,.55,.68,2.21-.41,3.28-.44,.44-1.08,.67-1.8,.67h0Zm-3.97-4.15c.62,.62,1.27,1.2,1.94,1.74,.45,.36,.97,.76,1.54,.91,.48,.14,1.04,.05,1.29-.2,.32-.31,.33-.91,.05-1.84-1.01-3.28-2.74-6.28-4.75-9.59-.38-.64-.78-1.29-1.33-1.77-.54-.46-1.2-.69-1.76-.61-.96,.15-1.56,1.2-1.7,2.11-.25,1.57,.23,3.29,1.49,5.27,1.44,.98,2.58,2.38,3.24,3.96v.02Z"
+            ></path>
+            <path
+            d="M19.11,29.66c.17,.48-.28,1.07-1,1.3s-1.44,.03-1.61-.46c-.17-.48,.28-1.07,1-1.3s1.44-.03,1.61,.46Z"
+            ></path>
+            <path
+            d="M17.52,31.77c-.81,0-1.47-.4-1.69-1.03-.12-.36-.09-.75,.09-1.12,.25-.5,.74-.9,1.37-1.1,.27-.09,.54-.13,.81-.13,.81,0,1.47,.4,1.69,1.03,.12,.36,.09,.75-.09,1.12-.25,.5-.74,.89-1.37,1.1-.27,.09-.54,.13-.81,.13Zm-.33-1.5s.16,.07,.33,.07c.12,0,.25-.02,.37-.06,.33-.11,.49-.29,.53-.38-.05-.03-.16-.07-.33-.07-.12,0-.25,.02-.37,.06-.33,.11-.49,.29-.53,.38Z"
+            ></path>
+            <path
+            d="M23.49,22.25c.38,.32,.34,.96-.08,1.41-.42,.46-1.07,.57-1.45,.24s-.34-.96,.08-1.41,1.07-.57,1.45-.24Z"
+            ></path>
+            <path
+            d="M22.5,24.81c-.38,0-.73-.12-1-.36-.3-.26-.48-.63-.51-1.05-.03-.49,.16-1,.53-1.39,.39-.42,.91-.66,1.44-.66,.38,0,.73,.12,1,.36,.3,.26,.49,.63,.51,1.05,.03,.49-.16,1-.53,1.39-.39,.42-.91,.66-1.44,.66Zm.46-2.03c-.1,0-.26,.05-.39,.2-.12,.13-.16,.26-.15,.34,0,.02,0,.04,0,.04,.03,.03,.27,.02,.46-.18,.12-.13,.16-.26,.15-.34,0-.02,0-.04,0-.05,0,0-.03-.01-.07-.01Z"
+            ></path>
+            <path
+            d="M31.17,17.92c.2,.58-.25,1.26-1,1.51s-1.52-.02-1.71-.6,.25-1.26,1-1.51,1.52,.02,1.71,.6Z"
+            ></path>
+            <path
+            d="M29.6,20.23c-.87,0-1.58-.46-1.82-1.18-.32-.95,.33-2.04,1.45-2.42,.26-.09,.53-.13,.79-.13,.87,0,1.58,.46,1.82,1.18,.16,.49,.08,1.04-.23,1.5-.28,.42-.71,.74-1.22,.91-.26,.09-.53,.13-.79,.13h0Zm.42-2.29c-.11,0-.23,.02-.34,.06-.41,.14-.6,.45-.55,.61,.06,.18,.46,.27,.81,.15,.21-.07,.39-.2,.49-.35,.03-.05,.1-.16,.06-.26-.04-.12-.24-.21-.47-.21Z"
+            ></path>
+        </symbol>
+        <symbol
+            id="fishing"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 36.74 35.98"
+        >
+            <rect
+            x="-1.04"
+            y="28.71"
+            width="13.7"
+            height="2.21"
+            rx=".44"
+            ry=".44"
+            transform="translate(-20.12 13.99) rotate(-47.57)"
+            ></rect>
+            <path
+            d="M1.95,35.98c-.39,0-.76-.14-1.05-.41l-.4-.36c-.31-.28-.48-.66-.5-1.08-.02-.41,.12-.81,.4-1.12l8.11-8.88c.29-.32,.71-.5,1.15-.5,.39,0,.76,.14,1.05,.4l.4,.36c.31,.28,.48,.66,.5,1.08,.02,.41-.12,.81-.4,1.12L3.1,35.47c-.29,.32-.71,.5-1.15,.5h0Zm7.72-10.9s-.06,0-.09,.04L1.47,33.99s-.03,.07-.03,.09,0,.06,.04,.09l.4,.36c.05,.05,.11,.06,.18,0l8.11-8.88s.03-.07,.03-.09,0-.06-.04-.09l-.4-.36s-.06-.03-.08-.03h-.01Z"
+            ></path>
+            <path
+            d="M10.72,25.9c-.13,0-.26-.04-.38-.11h0c-.13-.09-.24-.21-.29-.36-.02-.06-.06-.11-.1-.15-.09-.08-.19-.1-.26-.1-.16,.01-.35-.03-.49-.13-.17-.12-.28-.32-.3-.53-.02-.21,.06-.42,.21-.57L33.51,.21c.28-.27,.72-.27,1,0,.28,.27,.28,.72,.02,1L11.24,25.68c-.14,.15-.33,.22-.52,.22Z"
+            ></path>
+            <path
+            d="M32.95,5.04c-.17,0-.34-.06-.47-.18l-.9-.79c-.3-.26-.33-.71-.07-1.01s.71-.33,1.01-.07l.9,.79c.3,.26,.33,.71,.07,1.01-.14,.16-.34,.24-.54,.24h0Z"
+            ></path>
+            <path
+            d="M29.63,8.77c-.16,0-.33-.06-.46-.17l-1.31-1.12c-.3-.26-.34-.71-.08-1.01,.26-.3,.71-.34,1.01-.08l1.31,1.12c.3,.26,.34,.71,.08,1.01-.14,.17-.34,.25-.54,.25h-.01Z"
+            ></path>
+            <path
+            d="M26.31,12.5c-.16,0-.32-.05-.46-.17l-1.73-1.45c-.3-.25-.34-.7-.09-1.01,.25-.3,.7-.34,1.01-.09l1.73,1.45c.3,.25,.34,.7,.09,1.01-.14,.17-.34,.26-.55,.26Z"
+            ></path>
+            <path
+            d="M22.99,16.24c-.16,0-.32-.05-.46-.16l-2.14-1.77c-.3-.25-.35-.7-.09-1.01,.25-.3,.7-.34,1.01-.09l2.14,1.77c.3,.25,.35,.7,.09,1.01-.14,.17-.34,.26-.55,.26h0Z"
+            ></path>
+            <path
+            d="M19.68,19.97c-.16,0-.32-.05-.45-.16l-2.55-2.1c-.3-.25-.35-.7-.1-1.01,.25-.3,.7-.35,1.01-.1l2.55,2.1c.3,.25,.35,.7,.1,1.01-.14,.17-.35,.26-.55,.26h-.01Z"
+            ></path>
+            <path
+            d="M25.56,33.81c-1.47,0-2.98-.55-4.17-1.54-1.32-1.11-2.11-2.63-2.16-4.17-.06-1.85,.92-3.47,1.79-4.67,1.77-2.46,3.96-4.57,6.09-6.61,2.28-2.19,4.64-4.45,6.4-7.11,1.15-1.73,1.71-3.2,1.79-4.62,.05-1.04-.09-2.91-1.63-3.75-.35-.19-.47-.62-.29-.97,.19-.35,.62-.47,.97-.29,1.63,.89,2.5,2.74,2.38,5.08-.09,1.68-.73,3.38-2.02,5.34-1.84,2.79-4.26,5.11-6.6,7.35-2.08,1.99-4.23,4.06-5.92,6.41-.73,1.02-1.56,2.37-1.52,3.79,.03,1.12,.65,2.28,1.65,3.12,1.11,.92,2.56,1.36,3.9,1.16,1.38-.21,2.62-1.1,3.21-2.32,.61-1.25,.51-2.82-.26-3.91-.19-.28-.39-.45-.56-.49-.07-.02-.15,.01-.18,.03-.12,.38-.51,.58-.89,.46s-.58-.53-.47-.9c.23-.74,1.07-1.18,1.88-.97,.51,.13,.97,.48,1.37,1.05,1.06,1.5,1.21,3.66,.38,5.36-.8,1.64-2.44,2.83-4.28,3.1-.28,.04-.57,.06-.86,.06h0Z"
+            ></path>
+            <path
+            d="M17.13,26.22c0,1.67-1.35,3.02-3.02,3.02s-3.02-1.35-3.02-3.02,1.35-3.02,3.02-3.02,3.02,1.35,3.02,3.02Z"
+            ></path>
+            <path
+            d="M14.1,29.95c-2.06,0-3.74-1.68-3.74-3.74s1.68-3.74,3.74-3.74,3.74,1.68,3.74,3.74-1.68,3.74-3.74,3.74Zm0-6.04c-1.27,0-2.31,1.03-2.31,2.31s1.03,2.31,2.31,2.31,2.31-1.03,2.31-2.31-1.03-2.31-2.31-2.31Z"
+            ></path>
+        </symbol>
+        <symbol
+            id="lighthouse"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 29.58 36.55"
+        >
+            <path
+            d="M21.4,35.84H8.3c-1.29,0-2.35-1.06-2.35-2.35h0c0-1.29,1.06-2.35,2.35-2.35h13.1c1.29,0,2.35,1.06,2.35,2.35h0c0,1.29-1.06,2.35-2.35,2.35Z"
+            ></path>
+            <path
+            d="M21.4,36.55H8.3c-1.69,0-3.07-1.38-3.07-3.07s1.38-3.07,3.07-3.07h13.1c1.69,0,3.07,1.38,3.07,3.07s-1.38,3.07-3.07,3.07Zm-13.1-4.71c-.9,0-1.64,.74-1.64,1.64s.74,1.64,1.64,1.64h13.1c.9,0,1.64-.74,1.64-1.64s-.74-1.64-1.64-1.64H8.3Z"
+            ></path>
+            <polygon
+            points="20.24 31.13 9.47 31.13 11.81 8.87 17.9 8.87 20.24 31.13"
+            ></polygon>
+            <path
+            d="M20.24,31.84H9.47c-.2,0-.4-.09-.53-.24-.14-.15-.2-.35-.18-.55l2.33-22.26c.04-.36,.34-.64,.71-.64h6.1c.37,0,.67,.28,.71,.64l2.32,22.16c0,.06,.02,.11,.02,.18,0,.39-.32,.71-.71,.71h0Zm-9.98-1.43h9.18l-2.18-20.83h-4.81l-2.18,20.83h-.01Z"
+            ></path>
+            <rect x="12.86" y="6.25" width="3.99" height="2.5"></rect>
+            <path
+            d="M16.85,9.46h-3.99c-.39,0-.71-.32-.71-.71v-2.5c0-.39,.32-.71,.71-.71h3.99c.39,0,.71,.32,.71,.71v2.5c0,.39-.32,.71-.71,.71Zm-3.27-1.43h2.56v-1.07h-2.56v1.07Z"
+            ></path>
+            <polygon points="14.47 .71 20.62 6.25 9.09 6.25 14.47 .71"></polygon>
+            <path
+            d="M20.62,6.97H9.1c-.29,0-.55-.17-.66-.44-.11-.26-.05-.57,.15-.78L13.96,.22c.27-.28,.7-.29,.99-.03l6.08,5.49c.18,.13,.3,.34,.3,.58,0,.39-.32,.71-.71,.71Zm-9.84-1.43h7.98L14.51,1.71l-3.73,3.83Z"
+            ></path>
+            <polygon
+            points="23.32 7.87 28.86 1.73 28.86 13.26 23.32 7.87"
+            ></polygon>
+            <path
+            d="M28.86,13.97c-.18,0-.36-.07-.5-.2l-5.54-5.38c-.28-.27-.29-.71-.03-.99L28.33,1.26c.2-.22,.51-.29,.79-.19,.28,.11,.46,.37,.46,.67V13.26c0,.29-.17,.55-.44,.66-.09,.04-.18,.06-.28,.06h0Zm-4.55-6.14l3.83,3.73V3.59l-3.83,4.25Z"
+            ></path>
+            <polygon points="6.26 7.11 .72 13.26 .72 1.73 6.26 7.11"></polygon>
+            <path
+            d="M.72,13.97c-.09,0-.17-.02-.26-.05-.28-.11-.46-.37-.46-.67V1.73c0-.29,.17-.55,.44-.66,.26-.11,.57-.05,.78,.15L6.76,6.6c.28,.27,.29,.71,.03,.99L1.25,13.73c-.14,.15-.33,.24-.53,.24ZM1.43,3.42v7.98l3.83-4.25S1.43,3.42,1.43,3.42Z"
+            ></path>
+            <path
+            d="M13.78,31.77c-.19,0-.38-.08-.52-.23-.27-.29-.26-.74,.03-1.01l5.87-5.5c.29-.27,.74-.26,1.01,.03,.27,.29,.26,.74-.03,1.01l-5.87,5.5c-.14,.13-.31,.19-.49,.19h0Z"
+            ></path>
+            <path
+            d="M9.95,29.02c-.19,0-.38-.07-.52-.22-.27-.29-.26-.74,.02-1.01l9.09-8.67c.29-.27,.74-.26,1.01,.02,.27,.29,.26,.74-.02,1.01l-9.09,8.67c-.14,.13-.32,.2-.49,.2h0Z"
+            ></path>
+            <path
+            d="M10.56,21.65c-.19,0-.38-.07-.52-.22-.27-.29-.26-.74,.03-1.01l7.83-7.41c.29-.27,.74-.26,1.01,.03,.27,.29,.26,.74-.03,1.01l-7.83,7.41c-.14,.13-.31,.2-.49,.2h0Z"
+            ></path>
+            <path
+            d="M11.44,15.14c-.19,0-.38-.08-.52-.23-.27-.29-.25-.74,.04-1.01l5.75-5.33c.29-.27,.74-.25,1.01,.04,.27,.29,.25,.74-.04,1.01l-5.75,5.33c-.14,.13-.31,.19-.49,.19h0Z"
+            ></path>
+        </symbol>
+        <symbol
+            id="anchor"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 33.89 36.51"
+        >
+            <path
+            d="M32.65,24.01l-5.52-.04,2.26,1.89c-1.03,.99-7.47,4.36-8,2.59-.71-2.39-2.78-2.53-2.78-2.53V13.06h5.46c.34,.3,.8,.49,1.29,.49,1.08,0,1.95-.88,1.95-1.95s-.88-1.95-1.95-1.95c-.58,0-1.09,.25-1.45,.65h-5.3v-3.41s1.58-1.64,1.58-2.9c0-1.8-1.46-3.26-3.26-3.26s-3.26,1.46-3.26,3.26c0,1.27,1.58,2.9,1.58,2.9v3.41h-5.26c-.36-.4-.88-.65-1.45-.65-1.08,0-1.95,.88-1.95,1.95s.88,1.95,1.95,1.95c.5,0,.95-.19,1.29-.49h5.42v12.85s-2.07,.14-2.78,2.53c-.53,1.77-6.96-1.6-8-2.59l2.26-1.89-5.52,.04-.51,4.97,2.27-1.9s3.68,5.22,13.94,8.72h.04c10.26-3.5,13.94-8.72,13.94-8.72l2.27,1.9-.51-4.97h0Z"
+            ></path>
+            <path
+            d="M16.96,36.51h-.04c-.08,0-.16,0-.23-.04-8.43-2.88-12.5-6.87-13.81-8.38l-1.71,1.43c-.22,.19-.54,.22-.79,.08-.26-.14-.41-.41-.38-.7l.51-4.97c.04-.36,.34-.64,.71-.64l5.52-.04h0c.3,0,.57,.19,.67,.47,.1,.28,.02,.6-.21,.79l-1.57,1.31c1.44,.92,4.49,2.41,5.89,2.41,.16,0,.24-.02,.28-.03,.59-1.92,1.92-2.61,2.74-2.86V13.78h-4.46c-.45,.32-.99,.49-1.54,.49-1.47,0-2.67-1.2-2.67-2.67s1.2-2.67,2.67-2.67c.64,0,1.26,.23,1.74,.65h4.26v-2.42c-.48-.54-1.58-1.93-1.58-3.18,0-2.19,1.78-3.98,3.98-3.98s3.98,1.78,3.98,3.98c0,1.25-1.1,2.64-1.58,3.18v2.42h4.3c.48-.42,1.1-.65,1.74-.65,1.47,0,2.67,1.2,2.67,2.67s-1.2,2.67-2.67,2.67c-.55,0-1.09-.17-1.54-.49h-4.5v11.56c.81,.25,2.15,.94,2.74,2.86,.04,.01,.12,.03,.28,.03,1.4,0,4.46-1.49,5.89-2.41l-1.57-1.31c-.23-.19-.32-.51-.21-.79,.1-.28,.37-.47,.67-.47h0l5.52,.04c.36,0,.67,.28,.71,.64l.51,4.97c.03,.29-.12,.57-.38,.7-.26,.14-.57,.1-.79-.08l-1.72-1.43c-1.31,1.51-5.38,5.5-13.81,8.38-.07,.03-.15,.04-.23,.04h.01ZM2.99,26.36h.09c.2,.03,.38,.13,.49,.3,.03,.05,3.65,5.01,13.37,8.38,9.76-3.39,13.34-8.33,13.37-8.38,.12-.16,.29-.27,.49-.3,.2-.03,.4,.03,.55,.16l.92,.77-.27-2.58-2.89-.02,.73,.61c.16,.13,.25,.32,.26,.52,0,.2-.07,.4-.22,.54-.96,.92-5.38,3.29-7.54,3.29-1.16,0-1.52-.64-1.64-1.02-.55-1.86-2.09-2.01-2.15-2.02-.37-.03-.66-.34-.66-.71V13.06c0-.39,.32-.71,.71-.71h5.46c.17,0,.34,.06,.47,.18,.23,.2,.52,.31,.82,.31,.68,0,1.24-.56,1.24-1.24s-.56-1.24-1.24-1.24c-.35,0-.68,.15-.92,.41-.14,.15-.33,.24-.53,.24h-5.3c-.39,0-.71-.32-.71-.71v-3.41c0-.19,.07-.36,.2-.5,.53-.55,1.38-1.7,1.38-2.41,0-1.41-1.14-2.55-2.55-2.55s-2.55,1.14-2.55,2.55c0,.74,.93,1.94,1.38,2.41,.13,.13,.2,.31,.2,.5v3.41c0,.39-.32,.71-.71,.71h-5.26c-.2,0-.4-.09-.53-.24-.24-.27-.57-.41-.92-.41-.68,0-1.24,.56-1.24,1.24s.56,1.24,1.24,1.24c.3,0,.59-.11,.82-.31,.13-.12,.3-.18,.47-.18h5.42c.39,0,.71,.32,.71,.71v12.85c0,.38-.29,.69-.67,.71-.06,0-1.59,.16-2.14,2.02-.11,.38-.48,1.02-1.64,1.02h0c-2.16,0-6.58-2.37-7.54-3.29-.15-.14-.23-.34-.22-.54,0-.2,.1-.39,.26-.52l.73-.61-2.89,.02-.27,2.58,.92-.77c.13-.11,.29-.17,.46-.17h.04Z"
+            ></path>
+        </symbol>
+        </svg>
         
 
+        <div class="work-list">
+            <div class="wrapper">
+                <p class="title">Software & Equipment Used</p>
+                <div class="accordion">
+                    <div class="accordion-panel">
+                        <h2 id="panel1-heading">
+                            <button
+                            class="accordion-trigger"
+                            aria-controls="panel1-content"
+                            aria-expanded="true"
+                            >
+                                <span class="accordion-title" id="panel1-title">Programming</span>
+                                <i class="fa-solid fa-code accordion-icon" style="color: #ffffff;"></i>
+                            </button>
+                        </h2>
+            
+                        <div
+                        class="accordion-content"
+                        id="panel1-content"
+                        aria-labelledby="panel1-heading"
+                        aria-hidden="false"
+                        role="region"
+                        >
+                            <ul>
+                                
+
+                                <li>VS Code</li>
+                                <li>GitHub</li>
+                                <li>Git </li>
+                                <li>Ubuntu(WSL)</li>
+                                <li>Docker</li>
+                                <li>Spyder</li>
+                                <li>Normal understanding of Microsoft Word, PowerPoint, Excel</li>
+
+                            </ul>
+                            <!-- <img
+                                class="accordion-image"
+                                src="assets/boat.webp"
+                                alt="A sailboat at sea during sunset"
+                            /> -->
+                            <img 
+                                class="accordion-image"
+                                src="portfolio-assets/programming-languages-shutterstock-1680857539.webp">
+                        </div>
+                    </div>
+          
+                    <div class="accordion-panel">
+                    <h2 id="panel2-title">
+                        <button
+                        class="accordion-trigger"
+                        aria-expanded="false"
+                        aria-controls="panel2-content"
+                        >
+                        <span class="accordion-title"> Embedded & Control Systems </span>
+            
+                        <i class="fa-solid fa-microchip accordion-icon" style="color: #ffffff;"></i>
+                        </button>
+                        
+                    </h2>
+            
+                    <div
+                        role="region"
+                        aria-labelledby="panel2-title"
+                        aria-hidden="true"
+                        class="accordion-content"
+                        id="panel2-content"
+                    >
+                        <ul>
+                        
+
+                            <li>Code-Composer studio</li>
+                            <li>Kinetis design studio</li>
+                            <li> Arduino IDE</li>
+                            <li>Mars 4_5</li>
+                            <li>VNC viewer (raspberry Pi)</li>
+
+                        </ul>
+                        <img
+                        class="accordion-image"
+                        src="portfolio-assets/control.png"
+                        />
+                    </div>
+                    </div>
+          
+                    <div class="accordion-panel">
+                    <h2 id="panel3-title">
+                        <button
+                        class="accordion-trigger"
+                        aria-expanded="false"
+                        aria-controls="panel3-content"
+                        >
+                        <span class="accordion-title"> Simulation or Computation </span>
+            
+                        <i class="fa-solid fa-object-group accordion-icon" style="color: #ffffff;"></i>
+                        </button>
+                    </h2>
+            
+                    <div
+                        role="region"
+                        aria-labelledby="panel3-title"
+                        aria-hidden="true"
+                        class="accordion-content"
+                        id="panel3-content"
+                    >
+                        <ul>
+                            <li>Mathematica</li> 
+                            <li>MATLAB</li>
+                            <li>Keras</li>
+                            <li>Pytorch</li>
+                            <li>LTspice</li>
+                            <li>ANSYS HFSS</li>
+                        </ul>
+                        <img
+                        class="accordion-image"
+                        src="portfolio-assets/sim.jpg"
+                        />
+                    </div>
+                    </div>
+            
+                    <div class="accordion-panel">
+                    <h2 id="panel4-title">
+                        <button
+                        class="accordion-trigger"
+                        aria-expanded="false"
+                        aria-controls="panel4-content"
+                        >
+                        <span class="accordion-title"> Design & Development </span>
+            
+                        <i class="fa-solid fa-tape accordion-icon" style="color: #ffffff;"></i>
+                        </button>
+                    </h2>
+            
+                    <div
+                        role="region"
+                        aria-labelledby="panel4-title"
+                        aria-hidden="true"
+                        class="accordion-content"
+                        id="panel4-content"
+                    >
+                        <ul>
+                        
+
+
+                            <li>Solidworks</li>
+                            <li>Design Spark</li>
+                            <li>Autodesk Fusion 360</li>
+                            <li>Ultimaker cura</li>
+                            <li>Blender</li>
+                            <li>Altium Designer</li>
+                            <li>Quartus</li>
+                            <li>Flux</li>
+                            <li>LTspice</li>
+                            <li>ANSYS HFSS</li>
+
+                        </ul>
+                        <img
+                        class="accordion-image"
+                        src="portfolio-assets/board.jpg"
+                        />
+                    </div>
+                    </div>
+
+                    <div class="accordion-panel">
+                    <h2 id="panel5-title">
+                        <button
+                        class="accordion-trigger"
+                        aria-expanded="false"
+                        aria-controls="panel5-content"
+                        >
+                        <span class="accordion-title"> Equipment </span>
+            
+                        <i class="fa-solid fa-gear accordion-icon" style="color: #ffffff;"></i>
+                        </button>
+                    </h2>
+            
+                    <div
+                        role="region"
+                        aria-labelledby="panel5-title"
+                        aria-hidden="true"
+                        class="accordion-content"
+                        id="panel5-content"
+                    >
+                        <ul>
+                        
+                            <h2>Testing Tools:</h2>
+                            <li>Oscilloscope</li>
+                            <li>N9912A FieldFox RF analyzer</li>
+                            <li>Multimeter</li>
+                            <li>Function Generator</li>
+                            <li>Waveform Generator</li>
+                            <li>PowerSupply</li>
+                            <li>Soldering and Crimping Tools</li>
+                            
+
+                        </ul>
+                        <img
+                        class="accordion-image"
+                        src="portfolio-assets/equipment.jpg"
+                        />
+                    </div>
+                    </div>
+
+                    <div class="accordion-panel">
+                        <h2 id="panel5-title">
+                            <button
+                            class="accordion-trigger"
+                            aria-expanded="false"
+                            aria-controls="panel5-content"
+                            >
+                            <span class="accordion-title"> Equipment </span>
+                
+                            <i class="fa-solid fa-gear accordion-icon" style="color: #ffffff;"></i>
+                            </button>
+                        </h2>
+                
+                        <div
+                            role="region"
+                            aria-labelledby="panel5-title"
+                            aria-hidden="true"
+                            class="accordion-content"
+                            id="panel5-content"
+                        >
+                            <ul>
+                            
+                                
+                                <h2>Microcontrollers:</h2>
+                                <li> C launchpad TM4C123G</li>
+                                <li> Arduino Nano 33 IoT</li>
+                                <li> Raspberry pi (alpha bot)</li>
+                                <li>Freescale FRDM-KL25Z</li>
+    
+                            </ul>
+                            <img
+                            class="accordion-image"
+                            src="portfolio-assets/equipment.jpg"
+                            />
+                        </div>
+                        </div>
+
+
+                    <div class="accordion-panel">
+                    <h2 id="panel6-title">
+                        <button
+                        class="accordion-trigger"
+                        aria-expanded="false"
+                        aria-controls="panel6-content"
+                        >
+                        <span class="accordion-title"> Extra </span>
+            
+                        <i class="fa-solid fa-plus accordion-icon" style="color: #ffffff;"></i>
+                        </button>
+                    </h2>
+            
+                    <div
+                        role="region"
+                        aria-labelledby="panel6-title"
+                        aria-hidden="true"
+                        class="accordion-content"
+                        id="panel6-content"
+                    >
+                        <ul>
+                        
+
+                            <li>RSLogix Micro</li>
+                            <li>RSLinx Classic</li>
+                            <li>RSLogix Emulate 500</li>
+                            <li>mySQL</li>
+                            <li>SQL</li>
+
+                        </ul>
+                        <img
+                        class="accordion-image"
+                        src="portfolio-assets/PLC.jpg"
+                        />
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
 <!-- -----------------portfolio------------- -->
         <div id="portfolio">
             <div class="container">
-                <h1 class="sub-title">My Work</h1>
+                <h1 class="sub-title">My <span>Work</span></h1>
                 
-                <div class="title-work" id="all-work">
-                </div>
-                <!-- <a class="btn" onclick="showmore()" id="smore">See more</a> -->
-                <div class="show-work" id="sec-work">
+                <h3 class="title">Projects</h3>
+                
+                <div class="project-container">
                     
-                    <div class="game-feature-box" style="transform: perspective(2000px) translate(0px,0px) rotateY(0deg) rotateX(0deg);">
-                        <button class="feature_button feature_button--left is-hidden">
-                            <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        </button>
-                        
+                    <div class="project" data-name="p-1">
+                        <div class="holder">
+                            <img src="portfolio-assets/Works/main/work1/20230425_182244.jpg">
+                        </div>
+                        <h3>Autonomous Driving Car</h3>
+                        <div class="status">Complete</div>
+                    </div>
+                    <div class="project" data-name="p-2">
+                        <div class="holder">
+                            <img src="portfolio-assets/Works/main/work0/0.PNG" alt="">
+                        </div>
+                        <h3>Automated Watering System</h3>
+                        <div class="status">Complete</div>
+                    </div>
+                    
+                    <div class="project"data-name="p-3">
+                        <div class="holder">
+                            <img src="portfolio-assets/Works/main/work2/0.JPG">
+                        </div>
+                        <h3>Three Coil wireless power transfer(WPT) Optimization</h3>
+                        <div class="status">Complete</div>
+                    </div>
+                    <!-- 
+                    <div class="project" data-name="p-4">
+                        <div class="holder">
+                            <img src="portfolio-assets/sufyan-JUJzjthZnYU-unsplash.jpg">
+                        </div>
+                        <h3>Project Name</h3>
+                        <div class="status">Status: N/A</div>
+                    </div> -->
+                    
+                </div>
 
+                <div class="project-preview">
+                    <div class="preview" data-target="p-1">
+                        <i class="fas fa-times"></i>
+                        <div class="holder">
+                            <img src="portfolio-assets/Works/main/work1/20230425_182244.jpg" loading="lazy" alt="">
+                        </div>
+                        <h3 >Automated Driving Car</h3>
                         
-                        <div class="feature_track-container">
-                            <ul class="feature_track">
-                                <li class="feature_slide current-slide">
-                                    <img src="portfolio-assets/Works/work0/0.PNG" class="object">
-                                    <div class="showcase-work">
-                                        <h1>Senior Design</h1>
-                                        <p>Automated Watering System</p>
-                                    </div>
-                                </li>
-                                <li class="feature_slide">
-                                    <div class="showcase-work">
-                                        <h1>second slide 2</h1>
-                                    </div>
-                                </li>
-                            </ul>
-                            
-                        </div>
-                        <button class="feature_button feature_button--right">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </button>
-                        <div class="feature_nav">
-                            <button class="feature_indicator current-slide"></button>
-                            <button class="feature_indicator"></button>
-                            <button class="feature_indicator"></button>
-                        </div>
-                    </div>
+                        <p>Report</p>
+                        <div class="status">Complete</div>
+                        <a  href="portfolio-assets/Works/main/work1/CrashProof.pdf" target="_blank" class="btn btn2">View PDF</a>
+                        
+                    </div>/main
+                    <div class="preview" data-target="p-2">
+                        <i class="fas fa-times"></i>
+                        <div class="holder">
+                            <img src="portfolio-assets/Works/main/work0/0.PNG" loading="lazy" alt="">
 
-                    <!-- <iframe id="myPDF" src="portfolio-assets/Works/work0/AWS.pdf#scrollbar=0" frameborder ="0"></iframe> -->
-                    <!-- testing other pdf viewing thingy for mobile -->
-                   
-                    <button class="backbtn" onclick="showless()" id="sless" style="margin-top: 25px;margin-bottom: 25px;">Hide Work Details</button>
-                    
-                    <button class="backbtn" onclick="showmore()" id="smore" style="display: none; margin-top: 25px;margin-bottom: 25px;">Show Work Details</button>
-                    <!-- <td align="center"> -->
-                        <object id="myPDF" data="portfolio-assets/Works/work0/AWS.pdf#scrollbar=0" frameborder="0">
-                        <p>
-                            Your web browser doesn't have pdf plugin. instead you can open the pdf from<a href="portfolio-assets/Works/work0/AWS.pdf" target="_blank">LINK</a>
-                        </p>
-                        <br>
-                        <p>
-                            Or download it from here <a href="portfolio-assets/Works/work0/AWS.pdf" download>LINK</a>
-                        </p>
-                        </object>
+                        </div>
+                        <h3 >AWS</h3>
                         
-                    <!-- </td> -->
+                        <p>Report</p>
+                        <div class="status">Complete</div>
+                        <a  href="portfolio-assets/Works/main/work0/AWS.pdf" target="_blank" class="btn btn2">View PDF</a>
+                        
+                    </div>
+                    <div class="preview" data-target="p-3">
+                        <i class="fas fa-times"></i>
+                        <div class="holder">
+                            <img src="portfolio-assets/Works/main/work2/sim2.JPG" loading="lazy" alt="">
+                        </div>
+                        <h3 >WPT</h3>
+                        
+                        <p>Report</p>
+                        <div class="status">Complete</div>
+                        <a  href="portfolio-assets/Works/main/work2/report.pdf" target="_blank" class="btn btn2">View PDF</a>
+                        
+                    </div>
+                    <!-- 
+                    <div class="preview" data-target="p-4">
+                        <i class="fas fa-times"></i>
+                        
+                        <img src="portfolio-assets/sufyan-JUJzjthZnYU-unsplash.jpg" alt="">
+                        <h3 >N/A</h3>
+                        
+                        <p>TBA</p>
+                        <div class="status">N/A</div>
+                        <a  href="" target="" class="btn btn2">TBA</a>
+                        
+                    </div> -->
+                </div>
+                
+                <h3 class="title">Side Works</h3>
+                <div id="side-container">
+                    <div class="card">
+                        <div class="back-card">
+                            <div>
+                                
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                            </div>
+                        </div>
+                        <div class="front-card">
+                            <h2>Repair (assembly & disassembly)</h2>
+                            <div class="rep-info">
+                                <div class="overlay"></div>
+                                <div class="img-size">
+                                    <img src="portfolio-assets/Works/side/work3/img/powertools.jpg" alt="">
+                                </div> 
+                                <p class="name">Electronics Repairs</p>
+                                <div class="total">3 completed</div>
+                                <!-- <div class="status" data-status="active">Status</div> -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="back-card">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <path fill="#dd2c00" d="M24,44L5,36V10l19,6V44z"></path><path fill="#a52005" d="M24,44l19-8V10l-19,6V44z"></path><path fill="#ff3d00" d="M5,10l19-6l19,6l-19,6L5,10z"></path><path fill="#fff" d="M36.538 29.214l1.645-12.583L40 16l-2.438 16.738-1.787.737-2.078-10.928-2.159 12.676L29.653 36 27 20.516l1.987-.69 1.763 11.661 2.135-13.015 1.604-.557L36.538 29.214zM16.855 31.103c0-.324-.036-.626-.109-.905-.073-.279-.206-.56-.399-.841-.193-.281-.458-.577-.794-.889-.336-.311-.766-.664-1.29-1.057-.572-.424-1.097-.864-1.577-1.319-.478-.454-.889-.931-1.232-1.431-.342-.499-.61-1.029-.803-1.59-.193-.561-.289-1.161-.289-1.801 0-.633.1-1.182.301-1.649.201-.468.485-.838.852-1.111.368-.273.809-.438 1.326-.492.519-.055 1.094.017 1.728.215.68.213 1.295.536 1.842.969.549.434 1.014.937 1.395 1.508.382.573.675 1.19.88 1.852.205.663.307 1.332.307 2.007l-2.137-.707c0-.39-.046-.764-.139-1.122-.092-.357-.234-.686-.424-.987-.19-.3-.43-.563-.719-.788-.289-.225-.629-.4-1.022-.526-.369-.119-.688-.167-.957-.144-.268.023-.491.103-.668.242-.177.138-.308.328-.392.569-.084.24-.126.516-.126.828 0 .587.208 1.145.625 1.676.418.533 1.059 1.112 1.925 1.741.682.495 1.276.99 1.779 1.485.505.497.926 1.009 1.263 1.534.337.527.588 1.077.753 1.649C18.917 30.592 19 31.201 19 31.846c0 .682-.104 1.258-.312 1.727-.207.469-.502.823-.884 1.063-.381.24-.84.36-1.378.363-.536.003-1.131-.118-1.784-.361-.579-.215-1.147-.531-1.704-.945-.555-.413-1.051-.907-1.489-1.484-.436-.575-.787-1.22-1.052-1.935C10.132 29.562 10 28.789 10 27.956l2.041.723c0 .499.066.951.199 1.357.133.406.315.765.546 1.077.232.313.506.579.824.8.318.221.662.4 1.032.534.731.266 1.283.271 1.654.014C16.668 32.204 16.855 31.75 16.855 31.103z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="front-card">
+                            <h2>Solidworks</h2>
+                            <div class="rep-info">
+                                <div class="overlay"></div>
+                                <div class="img-size">
+                                    <img src="portfolio-assets/Works/side/work2/img/e1.JPG" alt="">
+                                </div> 
+                                <p class="name">CAD design</p>
+                                <div class="total">3 completed</div>
+                                <!-- <div class="status" data-status="active">Status</div> -->
+                            </div>
+                            
+                        </div>
+                    </div>
                     
-               
                 </div>
+
+
+
                 
-                <h2 style="padding-top: 10px;">Extra (miscellaneous) --></h2>
-                <ul class="work-legend" id="legend-W">
-                    <li onclick = "filterEd()" class="list project-filter-active">All</li>
-                    <li onclick = "filterEd()" class="list">From School</li>
-                    <li onclick = "filterEd()" class="list">From Tutorials</li>
-                    <li onclick = "filterEd()" class="list">My own</li>
-                    <li onclick = "filterEd()" class="list">Self Research</li>
-                    <!-- <h1>Legend <button  onclick="hidde()"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button></h1>
-                    <h2> <span><i class="fa fa-play-circle" aria-hidden="true"></i></span> from a youtube tutorial</h2> -->
-                
-                </ul>
-                
-                <div class="work-list">
-                    <div class="work">
-                        <img src="portfolio-assets/veit-hammer--7RXjpd_XKw-unsplash.jpg">
-                        <div class="layer">
-                            <h3>Software</h3>
-                            <p>Showcasing any uses of software in (projects, examples, youtube tutorials, etc.) not 
-                                used for an embedded control or robotics usecase.
-                            </p>
-                            
+                <h3 class="title">Other works</h3>
+                <div id="other-container">
+                    <div class="card">
+                        <div class="back-card">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <linearGradient id="Oi_wi5LpyfLgcWZN6yf8Ta_KDGdN57NLSJa_gr1" x1="1" x2="45.667" y1="25.776" y2="25.776" gradientTransform="matrix(1 0 0 -1 0 49.276)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffa402"></stop><stop offset="1" stop-color="#f80"></stop></linearGradient><path fill="url(#Oi_wi5LpyfLgcWZN6yf8Ta_KDGdN57NLSJa_gr1)" d="M39,16C35.612,13.527,26.115,5.591,26.115,5.591c-1.055-0.892-2.632-0.76-3.523,0.294	c-0.893,1.054-0.761,2.631,0.293,3.523L28.311,14H9.5C8.119,14,7,15.119,7,16.5S8.119,19,9.5,19h8.787L1.978,31.517	c-1.095,0.841-1.302,2.41-0.461,3.505C2.009,35.664,2.751,36,3.502,36c0.531,0,1.066-0.168,1.521-0.517l9.996-7.672	C15.016,27.927,15,28.038,15,28.154C15,35.971,21.532,42,30,42s15.667-6.029,15.667-13.846C45.667,23.275,42.876,18.83,39,16z"></path><ellipse cx="30.5" cy="27" fill="#fff" rx="9.75" ry="9"></ellipse><path d="M30.5,18c5.385,0,9.75,4.029,9.75,9s-4.365,9-9.75,9s-9.75-4.029-9.75-9S25.115,18,30.5,18 M30.5,17.5 c-5.652,0-10.25,4.262-10.25,9.5s4.598,9.5,10.25,9.5s10.25-4.262,10.25-9.5S36.152,17.5,30.5,17.5L30.5,17.5z" opacity=".07"></path><path d="M30.5,17.5c5.652,0,10.25,4.262,10.25,9.5s-4.598,9.5-10.25,9.5S20.25,32.238,20.25,27S24.848,17.5,30.5,17.5 M30.5,17 c-5.928,0-10.75,4.486-10.75,10s4.822,10,10.75,10s10.75-4.486,10.75-10S36.428,17,30.5,17L30.5,17z" opacity=".05"></path><ellipse cx="30.5" cy="27" fill="#0370c8" rx="5.5" ry="5"></ellipse><path d="M30.5,21.5c3.308,0,6,2.467,6,5.5s-2.692,5.5-6,5.5s-6-2.467-6-5.5S27.192,21.5,30.5,21.5 M30.5,21 c-3.584,0-6.5,2.692-6.5,6s2.916,6,6.5,6s6.5-2.692,6.5-6S34.084,21,30.5,21L30.5,21z" opacity=".05"></path><path d="M30.5,22c3.038,0,5.5,2.239,5.5,5s-2.462,5-5.5,5S25,29.761,25,27S27.462,22,30.5,22 M30.5,21.5c-3.308,0-6,2.467-6,5.5 s2.692,5.5,6,5.5s6-2.467,6-5.5S33.808,21.5,30.5,21.5L30.5,21.5z" opacity=".07"></path>
+                                    </svg>
+                            </div>
                         </div>
-                    </div>
-                    <div class="work">
-                        <img src="portfolio-assets/axel-r-Ky0B3cBJGKo-unsplash.jpg">
-                        <div class="layer">
-                            <h3>Embedded and Control</h3>
-                            <p>Showcasing projects or practices involved in embedded systems or control systems</p>
-                            
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="portfolio-assets/sufyan-JUJzjthZnYU-unsplash.jpg">
-                        <div class="layer">
-                            <h3>Robotics</h3>
-                            <p>Showcasing projects or practices regarding robotics in any shape or form</p>
+                        <div class="front-card">
+                            <h2>Blender</h2>
+                            <div class="rep-info">
+                                <div class="overlay"></div>
+                                <div class="img-size">
+                                    <img src="portfolio-assets/Works/other/work1/hammer.png" alt="">
+                                </div> 
+                                
+                                <p class="name">Creative design</p>
+                                <div class="total">3 completed</div>
+                                <!-- <div class="status" data-status="active">Status</div> -->
+                            </div>
                             
                         </div>
                     </div>
                 </div>
+
+                
+                
             </div>
         </div>
-    </div>
+        </div>
 <!-- -----------------contact-------------- -->
+        <!-- <section class="contact" id="contact">
+            <h2 class="heading">Message <span>Me</span></h2>
+
+            <form  name="submit-to-google-sheet" action="">
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="Email" placeholder="Email Address" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="number" name="Mobile" placeholder="Mobile Number" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="Subject" placeholder="Subject" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+                <div class="textarea-field">
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    <span class="focus"></span>
+                </div>
+
+                <div class="btn-box btns">
+                    <button type="submit" class="btn btn2">Submit</button>
+                </div>
+            </form>
+            <span id="msg"></span>
+        </section> -->
+
+
+
         <div id="contact">
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
+                        <h1 class="sub-title">Contact <span>Me</span></h1>
                         <p><i class="fas fa-paper-plane"></i> 28aibarra@gmail.com</p>
                         <p><i class="fas fa-phone-square-alt"></i> (773) 387-8485</p>
                         <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/anthony-ibarra-b60b1318a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/anthony-i-b60b1318a/" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="https://www.facebook.com/alphatrex240" target="_blank"><i class="fab fa-facebook"></i></a>
                             <a href="https://github.com/aibarr23/Portfolio" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <!-- <a href=""><i class="fab fa-twitter-square"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a> -->
-                        </div>
-                        <div class="dropdown">
-                            <button class="btn btn2">CV <i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                            <div class="dropdown-content">
-                                <a href="portfolio-assets/Personal-files/Anthony_Ibarra-cv.pdf" target="_blank"  class="btn btn3">Open CV</a>
-                                <a href="portfolio-assets/Personal-files/Anthony_Ibarra-cv.pdf" download  class="btn btn3">Download CV</a>
-                            </div>                                
-                        </div>
-                        <div class="dropdown">
-                            <button class="btn btn2">Resume <i class="fa fa-angle-down" aria-hidden="true"></i></button>
-                            <div class="dropdown-content">
-                                <a href="portfolio-assets/Personal-files/Resume.pdf" target="_blank"  class="btn btn3">Open Resume</a>
-                                <a href="portfolio-assets/Personal-files/Resume.pdf" download class="btn btn3">Download Resume</a>
-                            </div>
+                          
                         </div>
                         
                     </div>
-                    <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2" style="margin: 20px 20px; padding: 14px 20px;">Submit</button>
-                        </form>
-                        <span id="msg"></span>
-                    </div>
                 </div>
             </div>
-            <div class="copyright">
-                <!-- <p>Copyright © Kevin. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p> -->
-            </div>
+
+
         </div>
+        <div class="copyright">
+            <!-- <p>Copyright © Kevin. Made with <i class="fas fa-heart"></i> by Easy Tutorials</p> -->
+        </div>
+        
         <script src="script.js"></script>
-        <script src="WEB/vanilla-tilt.js"></script>
         
        
     </body>

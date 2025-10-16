@@ -88,11 +88,11 @@ NOTE: Images are currently not implemented
 
 #### Rockwell Automation
 
-* [Sorting Boxes By Height]()
+* [Sorting Boxes By Height](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/PLC_project/Sorting_Boxes_ByHeight) Connected Components Workbench (CCW) - Ladder Logic
 
-* [Filling Water Tank]()
+* [Filling Water Tank](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/PLC_project/Filling_Water_Tank) Connected Components Workbench (CCW) - Ladder Logic
 
-* [Conveyor Velt]()
+* [Conveyor Velt](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/PLC_project/Converyor_Belt) Connected Components Workbench (CCW) - Ladder Logic
 
 * [Control Panel](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/PLC_project/Control_Panel) Connected Components Workbench (CCW) - Ladder Logic
 

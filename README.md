@@ -1,17 +1,23 @@
 # Contents
 
-Portfolio Website
+### Website Link: <https://aibarr23.github.io/Portfolio/>
+
+Portfolio showcasing  projects and skills in a website made from scratch using HTML Javascript and CSS.
 
 <details>
 <summary>Embedded Systems</summary>
+
 -Embedded C/C++
 
 -FreeRTOS
+
+-RTOS
 </details>
 &nbsp;
 
 <details>
 <summary>FPGA</summary>
+
 -Verilog
 
 -VHDL
@@ -20,12 +26,14 @@ Portfolio Website
 
 <details>
 <summary>Robotics</summary>
+
 -ROS2
 </details>
 &nbsp;
 
 <details>
 <summary>Industrial Automation</summary>
+
 -PLC
 
 -HMI
@@ -36,45 +44,59 @@ Portfolio Website
 &nbsp;
 &nbsp;
 
-&nbsp;
+<!-- ## 1. Portfolio -->
 
-## 1. Portfolio
+## 1. Embedded Systems
 
-### Website Link: <https://aibarr23.github.io/Portfolio/>
+### RTOS
 
-Portfolio showcasing  projects and skills in a website made from scratch using HTML Javascript and CSS.
+* [Mini RTOS](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/RTOS/Mini_RTOS) Making a Mini RTOS from scratch on a Tiva MCU
 
-## 2. Embedded Systems
-
-### Embedded C programming
+### Embedded C Programming
 
 * [blink LED](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/Tiva_C_series/project%200) Texas Instrument Tiva C series microcontroller
 
-## 3. FPGA
+## 2. FPGA
 
-### FPGA verilog VHDL programming
+### Verilog Programming
 
-* [verilog](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VERILOG) Icarus Verilog
+* [Line Decoder](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VERILOG/line%20decoder) Verilog - Icarus Verilog
 
-<!-- &nbsp; -->
+* [Greater Than 2-Bit](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VERILOG/Greater%20than%202bit) Verilog Icarus Verilog
+
+### VHDL Programming
+
+* [Full Adder](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VHDL/Full_adder) VHDL
+
+* [AND](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VHDL) VHDL - AND Gate
 
 &nbsp;
 
-## 4. Robotics
+## 3. Robotics
 
 ### ROS2
 
-* [small 2 wheel robot](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/Robotics/ROS2/ROS_test) RViz and frames
+* [small 2 wheel robot](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/Robotics/ROS2/ROS_test) RViz and Frames
 
 &nbsp;
 
-## 5. Industrial Automation
+## 4. Industrial Automation
+
+NOTE: Images are currently not implemented
 
 ### PLC
 
-#### Rockwell Automation (*ladder logic*)
+#### Rockwell Automation
 
-* [dishwasher](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/PLC_project/dishwash) RSLogix emulate500, RSLinx
+* [Sorting Boxes By Height]()
+
+* [Filling Water Tank]()
+
+* [Conveyor Velt]()
+
+* [Control Panel](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/PLC_project/Control_Panel) Connected Components Workbench (CCW) - Ladder Logic
+
+* [dishwasher](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/PLC_project/dishwash) RSLogix emulate500, RSLinx - Ladder Logic
 
 ### HMI
 <!-- 

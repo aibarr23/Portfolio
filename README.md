@@ -32,6 +32,13 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 &nbsp;
 
 <details>
+<summary>Automation Testing</summary>
+
+-ROBOT Framework
+</details>
+&nbsp;
+
+<details>
 <summary>Industrial Automation</summary>
 
 -PLC
@@ -77,6 +84,14 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 ### ROS2
 
 * [small 2 wheel robot](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/Robotics/ROS2/ROS_test) RViz and Frames
+
+&nbsp;
+
+## 3. Automation Testing
+
+### Robot Framework
+
+* [Selenium](https://github.com/aibarr23/Test-Automation/tree/master/development/robot-scripts) Using robot framework with selenium
 
 &nbsp;
 

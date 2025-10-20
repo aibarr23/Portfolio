@@ -87,7 +87,7 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 
 &nbsp;
 
-## 3. Automation Testing
+## 4. Automation Testing
 
 ### Robot Framework
 
@@ -95,7 +95,7 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 
 &nbsp;
 
-## 4. Industrial Automation
+## 5. Industrial Automation
 
 NOTE: Images are currently not implemented
 

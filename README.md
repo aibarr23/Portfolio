@@ -1,5 +1,7 @@
 # Contents
 
+NOTE: website ont upto date
+
 ### Website Link: <https://aibarr23.github.io/Portfolio/>
 
 Portfolio showcasing  projects and skills in a website made from scratch using HTML Javascript and CSS.
@@ -11,7 +13,11 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 
 -FreeRTOS
 
--RTOS
+-Bare Metal
+
+-MIROS
+
+-qm rtos
 </details>
 &nbsp;
 
@@ -57,7 +63,9 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 
 ### RTOS
 
-* [Mini RTOS](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/RTOS/Mini_RTOS) Making a Mini RTOS from scratch on a Tiva MCU
+* [QM RTOS](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/RTOS/Mini_RTOS) RTOS using semapohores and priority systems for thread management on a Tiva MCU
+
+* [MIROS](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/RTOS/Mini_RTOS%20-%20Copy) Making a Mini RTOS from scratch capable of preemtive, priority based scheduling; and efficient blocking of threads on a Tiva MCU
 
 ### Embedded C Programming
 

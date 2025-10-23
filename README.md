@@ -1,6 +1,6 @@
 # Contents
 
-NOTE: website ont upto date
+NOTE: website not upto date
 
 ### Website Link: <https://aibarr23.github.io/Portfolio/>
 
@@ -59,17 +59,32 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 
 <!-- ## 1. Portfolio -->
 
+<!-- Raspberry pi (alpha bot) (MCU: Broadcom
+BCM2837B0, Cortex-A53)
+
+● Freescale FRDM-KL25Z (MCU: Kinetis®
+L Series KL1x (KL14/15) & KL25
+Cortex®-M0+) -->
+
 ## 1. Embedded Systems
 
 ### RTOS
 
-* [QM RTOS](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/RTOS/Mini_RTOS) RTOS using semapohores and priority systems for thread management on a Tiva MCU
+* [QM RTOS](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/RTOS/Mini_RTOS) Tiva C Launchpad | TM4C132GH6PM cortex M4
+  * RTOS using semapohores and priority systems for thread management on a Tiva MCU
 
-* [MIROS](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/RTOS/Mini_RTOS%20-%20Copy) Making a Mini RTOS from scratch capable of preemtive, priority based scheduling; and efficient blocking of threads on a Tiva MCU
+* [MIROS](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/RTOS/Mini_RTOS%20-%20Copy) Tiva C Launchpad | TM4C132GH6PM cortex M4
+  * Making a Mini RTOS from scratch capable of preemtive, priority based scheduling; and efficient blocking of threads
 
-### Embedded C Programming
+### Embedded C Bare Metal
 
-* [blink LED](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/Tiva_C_series/project%200) Texas Instrument Tiva C series microcontroller
+* [Automated Watering System](https://github.com/aibarr23/AWS_Project) Arduino Nano 33 IOT | SAMD21 cortex M0+
+  * Control Servos and Moisture/Humidity Sensors for real time operations
+  * Mobile Application created to provide necessary information and control towards the systems' hardware, water flow, and current state.
+  * UDP client server communication between user application and deployed system
+  * Wireless communication through Bluetooth Protocol BLE
+
+* [blink LED](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/Tiva_C_series/project%200) Texas Instrument Tiva C Launchpad | TM4C132GH6PM cortex M4
 
 ## 2. FPGA
 
@@ -81,9 +96,9 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 
 ### VHDL Programming
 
-* [Full Adder](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VHDL/Full_adder) VHDL
+* [Full Adder](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VHDL/Full_adder) VHDL - Icarus Verilog
 
-* [AND](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VHDL) VHDL - AND Gate
+* [AND](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VHDL) VHDL - Icarus Verilog
 
 &nbsp;
 
@@ -104,8 +119,6 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 &nbsp;
 
 ## 5. Industrial Automation
-
-NOTE: Images are currently not implemented
 
 ### PLC
 

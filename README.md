@@ -9,49 +9,60 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 <details>
 <summary>Embedded Systems</summary>
 
--Embedded C/C++
+* Embedded C/C++
 
--FreeRTOS
+* Unit Testing
 
--Bare Metal
+* Bare Metal
 
--MIROS
+* FreeRTOS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+TiRTOS
 
--qm rtos
+* MIROS
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+qm rtos
+
 </details>
 &nbsp;
 
 <details>
 <summary>FPGA</summary>
 
--Verilog
+* Verilog
 
--VHDL
+* VHDL
+
 </details>
 &nbsp;
 
 <details>
 <summary>Robotics</summary>
 
--ROS2
+* ROS2
+
 </details>
 &nbsp;
 
 <details>
 <summary>Automation Testing</summary>
 
--ROBOT Framework
+* ROBOT Framework
+
 </details>
 &nbsp;
 
 <details>
 <summary>Industrial Automation</summary>
 
--PLC
+* PLC
 
--HMI
+* HMI
 
--SCADA
+* SCADA
+
 </details>
 
 &nbsp;
@@ -71,20 +82,28 @@ Cortex®-M0+) -->
 ### RTOS
 
 * [QM RTOS](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/RTOS/Mini_RTOS) Tiva C Launchpad | TM4C132GH6PM cortex M4
+  * uVision
   * RTOS using semapohores and priority systems for thread management on a Tiva MCU
 
 * [MIROS](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/RTOS/Mini_RTOS%20-%20Copy) Tiva C Launchpad | TM4C132GH6PM cortex M4
+  * uVision
   * Making a Mini RTOS from scratch capable of preemtive, priority based scheduling; and efficient blocking of threads
+
+### Unit Testing
+
+* [Ring-Buffer](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/Emb_Testing/Embedded_Test/U-Test/examples/ring-buffer) Embedded Test- Quantum Leaps ET without mocking
 
 ### Embedded C Bare Metal
 
 * [Automated Watering System](https://github.com/aibarr23/AWS_Project) Arduino Nano 33 IOT | SAMD21 cortex M0+
+  * Arduino IDE
   * Control Servos and Moisture/Humidity Sensors for real time operations
   * Mobile Application created to provide necessary information and control towards the systems' hardware, water flow, and current state.
   * UDP client server communication between user application and deployed system
   * Wireless communication through Bluetooth Protocol BLE
 
 * [blink LED](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/Tiva_C_series/project%200) Texas Instrument Tiva C Launchpad | TM4C132GH6PM cortex M4
+  * Code Composer Studio
 
 ## 2. FPGA
 

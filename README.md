@@ -2,7 +2,7 @@
 
 NOTE: website not upto date
 
-### Website Link: <https://aibarr23.github.io/Portfolio/>
+Website Link: <https://aibarr23.github.io/Portfolio/>
 
 Portfolio showcasing  projects and skills in a website made from scratch using HTML Javascript and CSS.
 
@@ -11,19 +11,32 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 
 * Embedded C/C++
 
+* Bare Metal
+  * Firmware
+
 * Unit Testing
 
-* Bare Metal
+  * Pytest
 
-* FreeRTOS
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-TiRTOS
+  * Utest
 
-* MIROS
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-qm rtos
+  * Embedded Test ET
+
+* Debugging - printf | Tracing
+  * Software Tracing - QP/Spy
+  * printf w/o UART or Segger
+
+* RTOS
+
+  * FreeRTOS
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  TiRTOS
+
+  * MIROS
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  qm rtos
 
 </details>
 &nbsp;

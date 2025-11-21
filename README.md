@@ -12,7 +12,10 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 * Embedded C/C++
 
 * Bare Metal
+
   * Firmware
+
+  * Bare Metal projects
 
 * Unit Testing
 
@@ -108,6 +111,13 @@ Cortex®-M0+) -->
 
 ### Embedded C Bare Metal
 
+* [BootLoader](https://github.com/aibarr23/Embedded-Control-Robotics/tree/main/Firmware/BareMetalSeries) STM32 Cortex-M | Firmware
+  * VSCode
+  * Buiding basic UART interface
+  * Setup VTOR register to properly relocat the interrupt vector table
+  * Linking prevention for Bootloader exeeding max size
+  * Implement padding for the bootloader with a python script
+
 * [Automated Watering System](https://github.com/aibarr23/AWS_Project) Arduino Nano 33 IOT | SAMD21 cortex M0+
   * Arduino IDE
   * Control Servos and Moisture/Humidity Sensors for real time operations
@@ -130,7 +140,7 @@ Cortex®-M0+) -->
 
 * [Full Adder](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VHDL/Full_adder) VHDL - Icarus Verilog
 
-* [AND](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VHDL) VHDL - Icarus Verilog
+* [AND](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VHDL/AND) VHDL - Icarus Verilog
 
 &nbsp;
 

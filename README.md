@@ -1,3 +1,7 @@
+# MY STATS
+
+[![Anthony's GitHub stats](https://github-readme-stats.vercel.app/api?username=aibarr23)](https://github.com/anuraghazra/github-readme-stats)
+
 # Contents
 
 NOTE: website not upto date

@@ -1,6 +1,6 @@
 # MY STATS
 
-[![Anthony's GitHub stats](https://github-readme-stats.vercel.app/api?username=aibarr23)](https://github.com/anuraghazra/github-readme-stats)
+[![Anthony's GitHub stats](https://github-readme-stats.vercel.app/api?username=aibarr23)](https://github.com/aibarr23/github-readme-stats)
 
 # Contents
 

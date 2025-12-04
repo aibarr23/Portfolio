@@ -64,6 +64,14 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 &nbsp;
 
 <details>
+<summary>LabView</summary>
+
+* FOC Algorithm (FPGA CRIO)**in progress**
+
+</details>
+&nbsp;
+
+<details>
 <summary>Automation Testing</summary>
 
 * ROBOT Framework
@@ -94,7 +102,7 @@ BCM2837B0, Cortex-A53)
 L Series KL1x (KL14/15) & KL25
 Cortex®-M0+) -->
 
-## 1. Embedded Systems
+## Embedded Systems
 
 ### RTOS
 
@@ -132,7 +140,7 @@ Cortex®-M0+) -->
 * [blink LED](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/Tiva_C_series/project%200) Texas Instrument Tiva C Launchpad | TM4C132GH6PM cortex M4
   * Code Composer Studio
 
-## 2. FPGA
+## FPGA
 
 ### Verilog Programming
 
@@ -148,7 +156,15 @@ Cortex®-M0+) -->
 
 &nbsp;
 
-## 3. Robotics
+## LabView
+
+### FPGA Module
+
+* [FOC Motor Control](https://github.com/aibarr23/LabView/tree/main/FOC%20Algorithm) **in progress**
+
+&nbsp;
+
+## Robotics
 
 ### ROS2
 
@@ -156,7 +172,7 @@ Cortex®-M0+) -->
 
 &nbsp;
 
-## 4. Automation Testing
+## Automation Testing
 
 ### Robot Framework
 
@@ -164,7 +180,7 @@ Cortex®-M0+) -->
 
 &nbsp;
 
-## 5. Industrial Automation
+## Industrial Automation
 
 ### PLC
 

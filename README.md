@@ -66,7 +66,7 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 <details>
 <summary>LabView</summary>
 
-* FOC Algorithm (FPGA CRIO)**in progress**
+* FOC Algorithm (FPGA CRIO)
 
 </details>
 &nbsp;
@@ -160,7 +160,7 @@ Cortex®-M0+) -->
 
 ### FPGA Module
 
-* [FOC Motor Control](https://github.com/aibarr23/LabView/tree/main/FOC%20Algorithm) **in progress**
+* [FOC Motor Control](https://github.com/aibarr23/LabView/tree/main/FOC%20Algorithm)
 
 &nbsp;
 

@@ -190,7 +190,7 @@ Cortex®-M0+) -->
 
 * [Filling Water Tank](https://github.com/aibarr23/Industrial-Automation/tree/main//Filling_Water_Tank) Connected Components Workbench (CCW) - Ladder Logic
 
-* [Conveyor Velt](https://github.com/aibarr23/Industrial-Automation/tree/main//Converyor_Belt) Connected Components Workbench (CCW) - Ladder Logic
+* [Conveyor Belt](https://github.com/aibarr23/Industrial-Automation/tree/main//Converyor_Belt) Connected Components Workbench (CCW) - Ladder Logic
 
 * [Control Panel](https://github.com/aibarr23/Industrial-Automation/tree/main//Control_Panel) Connected Components Workbench (CCW) - Ladder Logic
 

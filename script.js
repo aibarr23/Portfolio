@@ -231,3 +231,62 @@ previewBox.forEach(close => {
         previewContainer.style.display = 'none';
     }
 })
+
+
+
+
+// ===================== PROJECT FILTER SYSTEM =====================
+const filterButtons = document.querySelectorAll('.filter-btn[data-filter]');
+const projects = document.querySelectorAll('.project-container .project');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        // Get the selected filter
+        const filterValue = button.getAttribute('data-filter');
+        
+        // Filter projects
+        projects.forEach(project => {
+            const projectTags = project.getAttribute('data-tags');
+            
+            if (filterValue === 'all') {
+                // Show all projects
+                project.classList.remove('hidden');
+                project.classList.add('visible');
+                // Show all tags without highlight
+                project.querySelectorAll('.tag').forEach(tag => {
+                    tag.classList.remove('match');
+                });
+            } else {
+                // Check if project has the filter tag
+                if (projectTags && projectTags.includes(filterValue)) {
+                    project.classList.remove('hidden');
+                    project.classList.add('visible');
+                    // Highlight matching tags
+                    project.querySelectorAll('.tag').forEach(tag => {
+                        if (tag.getAttribute('data-tag') === filterValue) {
+                            tag.classList.add('match');
+                        } else {
+                            tag.classList.remove('match');
+                        }
+                    });
+                } else {
+                    project.classList.add('hidden');
+                    project.classList.remove('visible');
+                    // Remove highlight from tags
+                    project.querySelectorAll('.tag').forEach(tag => {
+                        tag.classList.remove('match');
+                    });
+                }
+            }
+        });
+    });
+});
+
+// Initialize - show all on load
+projects.forEach(project => {
+    project.classList.add('visible');
+});

@@ -1033,11 +1033,128 @@ span{
     text-transform: uppercase;
     text-align: center;
 }
+/* Filter Buttons Styling */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 3rem 0;
+    padding: 0 2rem;
+}
+
+/* dropdown container around a main button and its submenu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: transparent;
+    min-width: 12rem;
+    z-index: 10;
+    flex-direction: column;
+    padding: .5rem 0;
+}
+
+.dropdown .dropdown-content .filter-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: .6rem 1rem;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* icon spacing */
+.filter-btn.main i {
+    margin-left: .4rem;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.4rem;
+    border: 0.15rem solid var(--main-color);
+    background: transparent;
+    color: var(--text-color);
+    border-radius: 2.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-weight: 500;
+}
+
+.filter-btn:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem var(--shadow-color);
+}
+
+.filter-btn.active {
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0.5rem 1.5rem var(--main-color);
+}
+
+/* Tags Styling */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 1rem 0;
+    opacity: 0.9;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    font-size: 1.1rem;
+    background: var(--text2-color);
+    color: var(--bg-color);
+    border-radius: 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: var(--main-color);
+    transform: scale(1.1);
+}
+
 .container .project-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
-    padding: 0 0 17px
+    padding: 0 0 17px;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hide projects that don't match filter */
+.project.hidden {
+    display: none;
+}
+
+/* Highlight matching tags */
+.project.visible .tag.match {
+    background: var(--main-color);
+    box-shadow: 0 0 0.5rem var(--main-color);
 }
 .container .project-container .project{
     text-align: center;

@@ -815,14 +815,11 @@
                         id="panel6-content"
                     >
                         <ul>
-                        
-
                             <li>RSLogix Micro</li>
                             <li>RSLinx Classic</li>
                             <li>RSLogix Emulate 500</li>
                             <li>mySQL</li>
                             <li>SQL</li>
-
                         </ul>
                         <img
                         class="accordion-image"
@@ -843,38 +840,117 @@
                 
                 <h3 class="title">Projects</h3>
                 
+                <!-- Filter Buttons with grouped dropdowns -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+
+                    <div class="dropdown">
+                        <button class="filter-btn main">Embedded Systems <i class="fas fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <button class="filter-btn" data-filter="embedded">Embedded</button>
+                            <button class="filter-btn" data-filter="robotics">Robotics</button>
+                            <button class="filter-btn" data-filter="automation">Automation</button>
+                            <button class="filter-btn" data-filter="control">Control</button>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="filter-btn main">Power Electronics <i class="fas fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <button class="filter-btn" data-filter="power">Power</button>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="filter-btn main">Signal Processing <i class="fas fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <button class="filter-btn" data-filter="signal">Signal</button>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="filter-btn main">AI <i class="fas fa-caret-down"></i></button>
+                        <div class="dropdown-content">
+                            <button class="filter-btn" data-filter="programming">Programming</button>
+                            <button class="filter-btn" data-filter="Machine Learning">Machine Learning</button>
+                            <button class="filter-btn" data-filter="Pattern Recognition">Pattern Recognition</button>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="project-container">
                     
-                    <div class="project" data-name="p-1">
+                    <div class="project" data-name="p-1" data-tags="embedded,robotics,control">
                         <div class="holder">
                             <img src="portfolio-assets/Works/main/work1/20230425_182244.jpg">
                         </div>
                         <h3>Autonomous Driving Car</h3>
+                        <div class="tags">
+                            <span class="tag" data-tag="embedded">Embedded</span>
+                            <span class="tag" data-tag="robotics">Robotics</span>
+                            <span class="tag" data-tag="control">Control</span>
+                        </div>
                         <div class="status">Complete</div>
                     </div>
-                    <div class="project" data-name="p-2">
+                    <div class="project" data-name="p-2" data-tags="automation,embedded,power">
                         <div class="holder">
                             <img src="portfolio-assets/Works/main/work0/0.PNG" alt="">
                         </div>
                         <h3>Automated Watering System</h3>
+                        <div class="tags">
+                            <span class="tag" data-tag="automation">Automation</span>
+                            <span class="tag" data-tag="embedded">Embedded</span>
+                            <span class="tag" data-tag="power">Power</span>
+                        </div>
                         <div class="status">Complete</div>
                     </div>
                     
-                    <div class="project"data-name="p-3">
+                    <div class="project" data-name="p-3" data-tags="power">
                         <div class="holder">
                             <img src="portfolio-assets/Works/main/work2/0.JPG">
                         </div>
                         <h3>Three Coil wireless power transfer(WPT) Optimization</h3>
+                        <div class="tags">
+                            <span class="tag" data-tag="power">Power Electronics</span>
+                        </div>
                         <div class="status">Complete</div>
                     </div>
-                    <!-- 
-                    <div class="project" data-name="p-4">
+                    
+                    <div class="project" data-name="p-4" data-tags="pattern recognition, machine learning">
                         <div class="holder">
-                            <img src="portfolio-assets/sufyan-JUJzjthZnYU-unsplash.jpg">
+                            <img src="portfolio-assets/Works/main/work3/5.jpg">
                         </div>
-                        <h3>Project Name</h3>
-                        <div class="status">Status: N/A</div>
-                    </div> -->
+                        <h3>Fire Detection System</h3>
+                        <div class="tags">
+                            <span class="tag" data-tag="pattern recognition">Pattern Recognition</span>
+                            <span class="tag" data-tag="machine learning">Machine Learning</span>
+                        </div>
+                        <div class="status">Complete</div>
+                    </div>
+                    
+                    <div class="project" data-name="p-5" data-tags="power,control">
+                        <div class="holder">
+                            <img src="portfolio-assets/Works/main/work4/pittman-14207S008-brush-dc-motor-engineering-drawing.jpg">
+                        </div>
+                        <h3>DC Motor Design & Analysis</h3>
+                        <div class="tags">
+                            <span class="tag" data-tag="power">Power Electronics</span>
+                            <span class="tag" data-tag="control">Control</span>
+                        </div>
+                        <div class="status">Complete</div>
+                    </div>
+                    
+                    <div class="project" data-name="p-6" data-tags="signal,programming">
+                        <div class="holder">
+                            <img src="portfolio-assets/Works/main/work5/sphx_glr_plot_face_recognition_thumb.png">
+                        </div>
+                        <h3>Signal Processing & Recognition</h3>
+                        <div class="tags">
+                            <span class="tag" data-tag="signal">Signal Processing</span>
+                            <span class="tag" data-tag="programming">Programming</span>
+                        </div>
+                        <div class="status">Complete</div>
+                    </div>
                     
                 </div>
 
@@ -884,24 +960,24 @@
                         <div class="holder">
                             <img src="portfolio-assets/Works/main/work1/20230425_182244.jpg" loading="lazy" alt="">
                         </div>
-                        <h3 >Automated Driving Car</h3>
+                        <h3>Autonomous Driving Car</h3>
                         
-                        <p>Report</p>
+                        <p>Self-driving RC car project that follows a line on a track using embedded systems with DC motor, servo steering, and line-detection camera.</p>
                         <div class="status">Complete</div>
-                        <a  href="portfolio-assets/Works/main/work1/CrashProof.pdf" target="_blank" class="btn btn2">View PDF</a>
+                        <a href="portfolio-assets/Works/main/work1/CrashProof.pdf" target="_blank" class="btn btn2">View Report</a>
                         
-                    </div>/main
+                    </div>
                     <div class="preview" data-target="p-2">
                         <i class="fas fa-times"></i>
                         <div class="holder">
                             <img src="portfolio-assets/Works/main/work0/0.PNG" loading="lazy" alt="">
 
                         </div>
-                        <h3 >AWS</h3>
+                        <h3>Automated Watering System</h3>
                         
-                        <p>Report</p>
+                        <p>Smart irrigation prototype that automatically waters plants based on real-time moisture levels, weather conditions, and plant-specific requirements.</p>
                         <div class="status">Complete</div>
-                        <a  href="portfolio-assets/Works/main/work0/AWS.pdf" target="_blank" class="btn btn2">View PDF</a>
+                        <a href="portfolio-assets/Works/main/work0/AWS.pdf" target="_blank" class="btn btn2">View Report</a>
                         
                     </div>
                     <div class="preview" data-target="p-3">
@@ -909,25 +985,49 @@
                         <div class="holder">
                             <img src="portfolio-assets/Works/main/work2/sim2.JPG" loading="lazy" alt="">
                         </div>
-                        <h3 >WPT</h3>
+                        <h3>Three Coil Wireless Power Transfer</h3>
                         
-                        <p>Report</p>
+                        <p>Optimization of three-coil wireless power transfer system with efficiency analysis and simulations.</p>
                         <div class="status">Complete</div>
-                        <a  href="portfolio-assets/Works/main/work2/report.pdf" target="_blank" class="btn btn2">View PDF</a>
-                        
+                        <a href="portfolio-assets/Works/main/work2/report.pdf" target="_blank" class="btn btn2">View Report</a>
                     </div>
-                    <!-- 
+                    
                     <div class="preview" data-target="p-4">
                         <i class="fas fa-times"></i>
+                        <div class="holder">
+                            <img src="portfolio-assets/Works/main/work3/01Turismo_14800.jpg" loading="lazy" alt="">
+                        </div>
+                        <h3>Series Brush DC Motor Modeling</h3>
                         
-                        <img src="portfolio-assets/sufyan-JUJzjthZnYU-unsplash.jpg" alt="">
-                        <h3 >N/A</h3>
+                        <p>Electromechanical energy conversion project with DC motor modeling using LTSpice and performance analysis.</p>
+                        <div class="status">Complete</div>
+                        <a href="portfolio-assets/Works/main/work3/ECE 491 project report.pdf" target="_blank" class="btn btn2">View Report</a>
+                    </div>
+                    
+                    <div class="preview" data-target="p-5">
+                        <i class="fas fa-times"></i>
+                        <div class="holder">
+                            <img src="portfolio-assets/Works/main/work4/pittman-14207S008-brush-dc-motor-engineering-drawing.jpg" loading="lazy" alt="">
+                        </div>
+                        <h3>DC Motor Design & Analysis</h3>
                         
-                        <p>TBA</p>
-                        <div class="status">N/A</div>
-                        <a  href="" target="" class="btn btn2">TBA</a>
+                        <p>Comprehensive DC motor design and analysis including motor specifications, performance curves, and control characteristics.</p>
+                        <div class="status">Complete</div>
+                        <a href="portfolio-assets/Works/main/work4/project.pdf" target="_blank" class="btn btn2">View Project</a>
+                    </div>
+                    
+                    <div class="preview" data-target="p-6">
+                        <i class="fas fa-times"></i>
+                        <div class="holder">
+                            <img src="portfolio-assets/Works/main/work5/sphx_glr_plot_face_recognition_thumb.png" loading="lazy" alt="">
+                        </div>
+                        <h3>Signal Processing & Face Recognition</h3>
                         
-                    </div> -->
+                        <p>Advanced signal processing research project focusing on audio signal analysis and face recognition using Python and ML techniques.</p>
+                        <div class="status">Complete</div>
+                        <a href="portfolio-assets/Works/main/work5/Project.pdf" target="_blank" class="btn btn2">View Research</a>
+                        
+                    </div>
                 </div>
                 
                 <h3 class="title">Side Works</h3>
@@ -935,53 +1035,81 @@
                     <div class="card">
                         <div class="back-card">
                             <div>
-                                
                                 <i class="fa-solid fa-screwdriver-wrench"></i>
                             </div>
                         </div>
                         <div class="front-card">
-                            <h2>Repair (assembly & disassembly)</h2>
+                            <h2>Electronics Repairs</h2>
                             <div class="rep-info">
                                 <div class="overlay"></div>
                                 <div class="img-size">
                                     <img src="portfolio-assets/Works/side/work3/img/powertools.jpg" alt="">
                                 </div> 
-                                <p class="name">Electronics Repairs</p>
-                                <div class="total">3 completed</div>
-                                <!-- <div class="status" data-status="active">Status</div> -->
+                                <p class="name">Assembly & Disassembly</p>
+                                <div class="total">3 projects</div>
                             </div>
-                            
                         </div>
                     </div>
                     <div class="card">
                         <div class="back-card">
                             <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
-                                    <path fill="#dd2c00" d="M24,44L5,36V10l19,6V44z"></path><path fill="#a52005" d="M24,44l19-8V10l-19,6V44z"></path><path fill="#ff3d00" d="M5,10l19-6l19,6l-19,6L5,10z"></path><path fill="#fff" d="M36.538 29.214l1.645-12.583L40 16l-2.438 16.738-1.787.737-2.078-10.928-2.159 12.676L29.653 36 27 20.516l1.987-.69 1.763 11.661 2.135-13.015 1.604-.557L36.538 29.214zM16.855 31.103c0-.324-.036-.626-.109-.905-.073-.279-.206-.56-.399-.841-.193-.281-.458-.577-.794-.889-.336-.311-.766-.664-1.29-1.057-.572-.424-1.097-.864-1.577-1.319-.478-.454-.889-.931-1.232-1.431-.342-.499-.61-1.029-.803-1.59-.193-.561-.289-1.161-.289-1.801 0-.633.1-1.182.301-1.649.201-.468.485-.838.852-1.111.368-.273.809-.438 1.326-.492.519-.055 1.094.017 1.728.215.68.213 1.295.536 1.842.969.549.434 1.014.937 1.395 1.508.382.573.675 1.19.88 1.852.205.663.307 1.332.307 2.007l-2.137-.707c0-.39-.046-.764-.139-1.122-.092-.357-.234-.686-.424-.987-.19-.3-.43-.563-.719-.788-.289-.225-.629-.4-1.022-.526-.369-.119-.688-.167-.957-.144-.268.023-.491.103-.668.242-.177.138-.308.328-.392.569-.084.24-.126.516-.126.828 0 .587.208 1.145.625 1.676.418.533 1.059 1.112 1.925 1.741.682.495 1.276.99 1.779 1.485.505.497.926 1.009 1.263 1.534.337.527.588 1.077.753 1.649C18.917 30.592 19 31.201 19 31.846c0 .682-.104 1.258-.312 1.727-.207.469-.502.823-.884 1.063-.381.24-.84.36-1.378.363-.536.003-1.131-.118-1.784-.361-.579-.215-1.147-.531-1.704-.945-.555-.413-1.051-.907-1.489-1.484-.436-.575-.787-1.22-1.052-1.935C10.132 29.562 10 28.789 10 27.956l2.041.723c0 .499.066.951.199 1.357.133.406.315.765.546 1.077.232.313.506.579.824.8.318.221.662.4 1.032.534.731.266 1.283.271 1.654.014C16.668 32.204 16.855 31.75 16.855 31.103z"></path>
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"><path fill="#dd2c00" d="M24,44L5,36V10l19,6V44z"></path><path fill="#a52005" d="M24,44l19-8V10l-19,6V44z"></path><path fill="#ff3d00" d="M5,10l19-6l19,6l-19,6L5,10z"></path><path fill="#fff" d="M36.538 29.214l1.645-12.583L40 16l-2.438 16.738-1.787.737-2.078-10.928-2.159 12.676L29.653 36 27 20.516l1.987-.69 1.763 11.661 2.135-13.015 1.604-.557L36.538 29.214zM16.855 31.103c0-.324-.036-.626-.109-.905-.073-.279-.206-.56-.399-.841-.193-.281-.458-.577-.794-.889-.336-.311-.766-.664-1.29-1.057-.572-.424-1.097-.864-1.577-1.319-.478-.454-.889-.931-1.232-1.431-.342-.499-.61-1.029-.803-1.59-.193-.561-.289-1.161-.289-1.801 0-.633.1-1.182.301-1.649.201-.468.485-.838.852-1.111.368-.273.809-.438 1.326-.492.519-.055 1.094.017 1.728.215.68.213 1.295.536 1.842.969.549.434 1.014.937 1.395 1.508.382.573.675 1.19.88 1.852.205.663.307 1.332.307 2.007l-2.137-.707c0-.39-.046-.764-.139-1.122-.092-.357-.234-.686-.424-.987-.19-.3-.43-.563-.719-.788-.289-.225-.629-.4-1.022-.526-.369-.119-.688-.167-.957-.144-.268.023-.491.103-.668.242-.177.138-.308.328-.392.569-.084.24-.126.516-.126.828 0 .587.208 1.145.625 1.676.418.533 1.059 1.112 1.925 1.741.682.495 1.276.99 1.779 1.485.505.497.926 1.009 1.263 1.534.337.527.588 1.077.753 1.649C18.917 30.592 19 31.201 19 31.846c0 .682-.104 1.258-.312 1.727-.207.469-.502.823-.884 1.063-.381.24-.84.36-1.378.363-.536.003-1.131-.118-1.784-.361-.579-.215-1.147-.531-1.704-.945-.555-.413-1.051-.907-1.489-1.484-.436-.575-.787-1.22-1.052-1.935C10.132 29.562 10 28.789 10 27.956l2.041.723c0 .499.066.951.199 1.357.133.406.315.765.546 1.077.232.313.506.579.824.8.318.221.662.4 1.032.534.731.266 1.283.271 1.654.014C16.668 32.204 16.855 31.75 16.855 31.103z"></path></svg>
                             </div>
                         </div>
                         <div class="front-card">
-                            <h2>Solidworks</h2>
+                            <h2>Solidworks CAD</h2>
                             <div class="rep-info">
                                 <div class="overlay"></div>
                                 <div class="img-size">
                                     <img src="portfolio-assets/Works/side/work2/img/e1.JPG" alt="">
                                 </div> 
-                                <p class="name">CAD design</p>
-                                <div class="total">3 completed</div>
-                                <!-- <div class="status" data-status="active">Status</div> -->
+                                <p class="name">CAD Design</p>
+                                <div class="total">3 models</div>
                             </div>
-                            
                         </div>
                     </div>
-                    
+                    <div class="card">
+                        <div class="back-card">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"><path fill="#dd2c00" d="M24,44L5,36V10l19,6V44z"></path><path fill="#a52005" d="M24,44l19-8V10l-19,6V44z"></path><path fill="#ff3d00" d="M5,10l19-6l19,6l-19,6L5,10z"></path><path fill="#fff" d="M36.538 29.214l1.645-12.583L40 16l-2.438 16.738-1.787.737-2.078-10.928-2.159 12.676L29.653 36 27 20.516l1.987-.69 1.763 11.661 2.135-13.015 1.604-.557L36.538 29.214zM16.855 31.103c0-.324-.036-.626-.109-.905-.073-.279-.206-.56-.399-.841-.193-.281-.458-.577-.794-.889-.336-.311-.766-.664-1.29-1.057-.572-.424-1.097-.864-1.577-1.319-.478-.454-.889-.931-1.232-1.431-.342-.499-.61-1.029-.803-1.59-.193-.561-.289-1.161-.289-1.801 0-.633.1-1.182.301-1.649.201-.468.485-.838.852-1.111.368-.273.809-.438 1.326-.492.519-.055 1.094.017 1.728.215.68.213 1.295.536 1.842.969.549.434 1.014.937 1.395 1.508.382.573.675 1.19.88 1.852.205.663.307 1.332.307 2.007l-2.137-.707c0-.39-.046-.764-.139-1.122-.092-.357-.234-.686-.424-.987-.19-.3-.43-.563-.719-.788-.289-.225-.629-.4-1.022-.526-.369-.119-.688-.167-.957-.144-.268.023-.491.103-.668.242-.177.138-.308.328-.392.569-.084.24-.126.516-.126.828 0 .587.208 1.145.625 1.676.418.533 1.059 1.112 1.925 1.741.682.495 1.276.99 1.779 1.485.505.497.926 1.009 1.263 1.534.337.527.588 1.077.753 1.649C18.917 30.592 19 31.201 19 31.846c0 .682-.104 1.258-.312 1.727-.207.469-.502.823-.884 1.063-.381.24-.84.36-1.378.363-.536.003-1.131-.118-1.784-.361-.579-.215-1.147-.531-1.704-.945-.555-.413-1.051-.907-1.489-1.484-.436-.575-.787-1.22-1.052-1.935C10.132 29.562 10 28.789 10 27.956l2.041.723c0 .499.066.951.199 1.357.133.406.315.765.546 1.077.232.313.506.579.824.8.318.221.662.4 1.032.534.731.266 1.283.271 1.654.014C16.668 32.204 16.855 31.75 16.855 31.103z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="front-card">
+                            <h2>Parts Assembly</h2>
+                            <div class="rep-info">
+                                <div class="overlay"></div>
+                                <div class="img-size">
+                                    <img src="portfolio-assets/Works/side/work0/img/assemb.JPG" alt="">
+                                </div> 
+                                <p class="name">Mechanical Assembly</p>
+                                <div class="total">3 designs</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="back-card">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"><path fill="#dd2c00" d="M24,44L5,36V10l19,6V44z"></path><path fill="#a52005" d="M24,44l19-8V10l-19,6V44z"></path><path fill="#ff3d00" d="M5,10l19-6l19,6l-19,6L5,10z"></path><path fill="#fff" d="M36.538 29.214l1.645-12.583L40 16l-2.438 16.738-1.787.737-2.078-10.928-2.159 12.676L29.653 36 27 20.516l1.987-.69 1.763 11.661 2.135-13.015 1.604-.557L36.538 29.214zM16.855 31.103c0-.324-.036-.626-.109-.905-.073-.279-.206-.56-.399-.841-.193-.281-.458-.577-.794-.889-.336-.311-.766-.664-1.29-1.057-.572-.424-1.097-.864-1.577-1.319-.478-.454-.889-.931-1.232-1.431-.342-.499-.61-1.029-.803-1.59-.193-.561-.289-1.161-.289-1.801 0-.633.1-1.182.301-1.649.201-.468.485-.838.852-1.111.368-.273.809-.438 1.326-.492.519-.055 1.094.017 1.728.215.68.213 1.295.536 1.842.969.549.434 1.014.937 1.395 1.508.382.573.675 1.19.88 1.852.205.663.307 1.332.307 2.007l-2.137-.707c0-.39-.046-.764-.139-1.122-.092-.357-.234-.686-.424-.987-.19-.3-.43-.563-.719-.788-.289-.225-.629-.4-1.022-.526-.369-.119-.688-.167-.957-.144-.268.023-.491.103-.668.242-.177.138-.308.328-.392.569-.084.24-.126.516-.126.828 0 .587.208 1.145.625 1.676.418.533 1.059 1.112 1.925 1.741.682.495 1.276.99 1.779 1.485.505.497.926 1.009 1.263 1.534.337.527.588 1.077.753 1.649C18.917 30.592 19 31.201 19 31.846c0 .682-.104 1.258-.312 1.727-.207.469-.502.823-.884 1.063-.381.24-.84.36-1.378.363-.536.003-1.131-.118-1.784-.361-.579-.215-1.147-.531-1.704-.945-.555-.413-1.051-.907-1.489-1.484-.436-.575-.787-1.22-1.052-1.935C10.132 29.562 10 28.789 10 27.956l2.041.723c0 .499.066.951.199 1.357.133.406.315.765.546 1.077.232.313.506.579.824.8.318.221.662.4 1.032.534.731.266 1.283.271 1.654.014C16.668 32.204 16.855 31.75 16.855 31.103z"></path></svg>
+                            </div>
+                        </div>
+                        <div class="front-card">
+                            <h2>Valve Design</h2>
+                            <div class="rep-info">
+                                <div class="overlay"></div>
+                                <div class="img-size">
+                                    <img src="portfolio-assets/Works/side/work1/img/lyn valve0.JPG" alt="">
+                                </div> 
+                                <p class="name">Hydraulic Valve</p>
+                                <div class="total">4 designs</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 
 
                 
-                <h3 class="title">Other works</h3>
+                <h3 class="title">Other Works</h3>
                 <div id="other-container">
                     <div class="card">
                         <div class="back-card">
@@ -992,18 +1120,35 @@
                             </div>
                         </div>
                         <div class="front-card">
-                            <h2>Blender</h2>
+                            <h2>3D Donut</h2>
+                            <div class="rep-info">
+                                <div class="overlay"></div>
+                                <div class="img-size">
+                                    <img src="portfolio-assets/Works/other/work0/donut.png" alt="">
+                                </div> 
+                                <p class="name">Blender 3D</p>
+                                <div class="total">Creative Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="back-card">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                                    <linearGradient id="Oi_wi5LpyfLgcWZN6yf8Ta_KDGdN57NLSJa_gr1" x1="1" x2="45.667" y1="25.776" y2="25.776" gradientTransform="matrix(1 0 0 -1 0 49.276)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffa402"></stop><stop offset="1" stop-color="#f80"></stop></linearGradient><path fill="url(#Oi_wi5LpyfLgcWZN6yf8Ta_KDGdN57NLSJa_gr1)" d="M39,16C35.612,13.527,26.115,5.591,26.115,5.591c-1.055-0.892-2.632-0.76-3.523,0.294	c-0.893,1.054-0.761,2.631,0.293,3.523L28.311,14H9.5C8.119,14,7,15.119,7,16.5S8.119,19,9.5,19h8.787L1.978,31.517	c-1.095,0.841-1.302,2.41-0.461,3.505C2.009,35.664,2.751,36,3.502,36c0.531,0,1.066-0.168,1.521-0.517l9.996-7.672	C15.016,27.927,15,28.038,15,28.154C15,35.971,21.532,42,30,42s15.667-6.029,15.667-13.846C45.667,23.275,42.876,18.83,39,16z"></path><ellipse cx="30.5" cy="27" fill="#fff" rx="9.75" ry="9"></ellipse><path d="M30.5,18c5.385,0,9.75,4.029,9.75,9s-4.365,9-9.75,9s-9.75-4.029-9.75-9S25.115,18,30.5,18 M30.5,17.5 c-5.652,0-10.25,4.262-10.25,9.5s4.598,9.5,10.25,9.5s10.25-4.262,10.25-9.5S36.152,17.5,30.5,17.5L30.5,17.5z" opacity=".07"></path><path d="M30.5,17.5c5.652,0,10.25,4.262,10.25,9.5s-4.598,9.5-10.25,9.5S20.25,32.238,20.25,27S24.848,17.5,30.5,17.5 M30.5,17 c-5.928,0-10.75,4.486-10.75,10s4.822,10,10.75,10s10.75-4.486,10.75-10S36.428,17,30.5,17L30.5,17z" opacity=".05"></path><ellipse cx="30.5" cy="27" fill="#0370c8" rx="5.5" ry="5"></ellipse><path d="M30.5,21.5c3.308,0,6,2.467,6,5.5s-2.692,5.5-6,5.5s-6-2.467-6-5.5S27.192,21.5,30.5,21.5 M30.5,21 c-3.584,0-6.5,2.692-6.5,6s2.916,6,6.5,6s6.5-2.692,6.5-6S34.084,21,30.5,21L30.5,21z" opacity=".05"></path><path d="M30.5,22c3.038,0,5.5,2.239,5.5,5s-2.462,5-5.5,5S25,29.761,25,27S27.462,22,30.5,22 M30.5,21.5c-3.308,0-6,2.467-6,5.5 s2.692,5.5,6,5.5s6-2.467,6-5.5S33.808,21.5,30.5,21.5L30.5,21.5z" opacity=".07"></path>
+                                    </svg>
+                            </div>
+                        </div>
+                        <div class="front-card">
+                            <h2>3D Hammer</h2>
                             <div class="rep-info">
                                 <div class="overlay"></div>
                                 <div class="img-size">
                                     <img src="portfolio-assets/Works/other/work1/hammer.png" alt="">
                                 </div> 
-                                
-                                <p class="name">Creative design</p>
-                                <div class="total">3 completed</div>
-                                <!-- <div class="status" data-status="active">Status</div> -->
+                                <p class="name">Blender 3D</p>
+                                <div class="total">Creative Design</div>
                             </div>
-                            
                         </div>
                     </div>
                 </div>

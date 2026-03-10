@@ -1131,10 +1131,25 @@ span{
 
 .container .project-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /* allow cards to shrink more on narrow screens; base min width 20rem */
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2rem;
     padding: 0 0 17px;
     animation: fadeIn 0.5s ease;
+}
+
+/* when filtering shows just one project, make it span full width */
+.container .project-container.single {
+    grid-template-columns: 1fr;
+}
+.container .project-container.single .project {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+/* few visible projects use slightly larger min width */
+.container .project-container.few {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
 @keyframes fadeIn {
@@ -1172,7 +1187,9 @@ span{
     outline-offset: 0;
 }
 .container .project-container .project img{
-    height: 25rem;
+    width: 100%;
+    height: auto;
+    max-height: 25rem;
     border-radius: 10px;
     transition: 0.5s;
 }

@@ -231,3 +231,79 @@ previewBox.forEach(close => {
         previewContainer.style.display = 'none';
     }
 })
+
+
+
+
+// ===================== PROJECT FILTER SYSTEM =====================
+const filterButtons = document.querySelectorAll('.filter-btn[data-filter]');
+const projects = document.querySelectorAll('.project-container .project');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        // Get the selected filter (normalized to lowercase)
+        const filterValue = button.getAttribute('data-filter').toLowerCase();
+        
+        // Filter projects
+        projects.forEach(project => {
+            const projectTagsRaw = project.getAttribute('data-tags');
+            const projectTags = projectTagsRaw ? projectTagsRaw.toLowerCase() : '';
+            
+            if (filterValue === 'all') {
+                // Show all projects
+                project.classList.remove('hidden');
+                project.classList.add('visible');
+                // Show all tags without highlight
+                project.querySelectorAll('.tag').forEach(tag => {
+                    tag.classList.remove('match');
+                });
+            } else {
+                // Check if project has the filter tag (split & trim for robust matching)
+                const tagList = projectTags.split(',').map(t => t.trim());
+                if (tagList.includes(filterValue)) {
+                    project.classList.remove('hidden');
+                    project.classList.add('visible');
+                    // Highlight matching tags
+                    project.querySelectorAll('.tag').forEach(tag => {
+                        if (tag.getAttribute('data-tag').toLowerCase() === filterValue) {
+                            tag.classList.add('match');
+                        } else {
+                            tag.classList.remove('match');
+                        }
+                    });
+                } else {
+                    project.classList.add('hidden');
+                    project.classList.remove('visible');
+                    // Remove highlight from tags
+                    project.querySelectorAll('.tag').forEach(tag => {
+                        tag.classList.remove('match');
+                    });
+                }
+            }
+        });
+        
+        // adjust container class based on number of visible projects
+        const container = document.querySelector('.project-container');
+        const visibleCount = Array.from(projects).filter(p => !p.classList.contains('hidden')).length;
+        container.classList.remove('single','few','many');
+        if (visibleCount <= 1) container.classList.add('single');
+        else if (visibleCount <= 3) container.classList.add('few');
+        else container.classList.add('many');
+    });
+});
+
+// Initialize - show all on load
+projects.forEach(project => {
+    project.classList.add('visible');
+});
+
+// set initial container sizing class
+(function(){
+    const container = document.querySelector('.project-container');
+    const visibleCount = Array.from(projects).length;
+    container.classList.add(visibleCount <= 1 ? 'single' : visibleCount <= 3 ? 'few' : 'many');
+})();

@@ -1246,6 +1246,19 @@ span{
     font-size: 2rem;
     color: var(--text-color);
 }
+/* GitHub icon link inside project cards matches contact social icons */
+.project-github, .container .project-container .project a {
+    font-size: 30px;
+    color: #ababab;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: transform 0.5s, color 0.5s;
+}
+.project-github:hover, .container .project-container .project a:hover {
+    color: var(--main-color);
+    transform: translateY(-5px);
+}
+
 .project-preview{
     position: fixed;
     top: 0; left: 0;

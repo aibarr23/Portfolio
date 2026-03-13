@@ -144,6 +144,8 @@ Cortex®-M0+) -->
 
 ### Verilog Programming
 
+Learning src: [LinkedIn Learning](https://www.linkedin.com/learning/learning-fpga-development) and [LinkedIn Learning](https://www.linkedin.com/learning/learning-verilog-for-fpga-development)
+
 * [Line Decoder](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VERILOG/line%20decoder) Verilog - Icarus Verilog
 
 * [Greater Than 2-Bit](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VERILOG/Greater%20than%202bit) Verilog Icarus Verilog
@@ -176,6 +178,8 @@ Cortex®-M0+) -->
 
 ### Robot Framework
 
+Learning souce: [LinkdedIn learning](https://www.linkedin.com/learning/robot-framework-test-automation-level-1-selenium-21986416)
+
 * [Selenium](https://github.com/aibarr23/Test-Automation/tree/master/development/robot-scripts) Using robot framework with selenium
 
 &nbsp;
@@ -185,6 +189,9 @@ Cortex®-M0+) -->
 ### PLC
 
 #### Rockwell Automation
+
+Learning source:
+[LinkedIn learning Path](https://www.linkedin.com/learning/paths/become-a-plc-developer)
 
 * [Sorting Boxes By Height](https://github.com/aibarr23/Industrial-Automation/tree/main//Sorting_Boxes_ByHeight) Connected Components Workbench (CCW) - Ladder Logic
 

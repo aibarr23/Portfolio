@@ -31,8 +31,15 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 <summary>View projects
 </summary>
 
+* [Buildi a system from the ground up](https://github.com/aibarr23/Embedded-Systems-Control/tree/main/using_qemu/day_1) QEMU ARMv7-A & Cortex-A9 MPCore| Firmware and U-Boot
+  * IDE-NeoVIM
+  * Using U-Boot as the bootloader for the ARMv7 within QEMU, implement cmake and bash scripts for building/debugging the program
+  * UART driver implementation of PL011 UART peripheral for Versatile Exppress hardware(Motherboard Express uATX)
+  * Interrupt implementation through the Generic Interrupt Controller of Cortex-A9 MPCore cpu for the CoreTile Express A9x4 daughterboard
+  * Cooperative Scheduler implementation for cooperative(or non-preemtive) multitasking
+
 * [BootLoader](https://github.com/aibarr23/Embedded-Control-Robotics/tree/main/Firmware/BareMetalSeries) STM32 Cortex-M | Firmware
-  * VSCode
+  * IDE-VSCode
   * AES Firmware CBC_MAC, implementation of cryptographic signed and validate firmware
   * Bootloader Firmware Update implementation, system teardown and system setup, bootloading or firmware update implementation through a state machine and timeout implementation;
   * Flash Control, the process of writing to the flash and erasing the main application when updating

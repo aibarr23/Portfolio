@@ -15,11 +15,11 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 </summary>
 
 * [QM RTOS](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/RTOS/Mini_RTOS) Tiva C Launchpad | TM4C132GH6PM cortex M4
-  * uVision
+  * IDE-uVision
   * RTOS using semapohores and priority systems for thread management on a Tiva MCU
 
 * [MIROS](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/RTOS/Mini_RTOS%20-%20Copy) Tiva C Launchpad | TM4C132GH6PM cortex M4
-  * uVision
+  * IDE-uVision
   * Making a Mini RTOS from scratch capable of preemtive, priority based scheduling; and efficient blocking of threads
 
 </details>
@@ -31,8 +31,9 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
 <summary>View projects
 </summary>
 
-* [Buildi a system from the ground up](https://github.com/aibarr23/Embedded-Systems-Control/tree/main/using_qemu/day_1) QEMU ARMv7-A & Cortex-A9 MPCore| Firmware and U-Boot
+* [Building a system from the ground up](https://github.com/aibarr23/Embedded-Systems-Control/tree/main/using_qemu/day_1) QEMU ARMv7-A & Cortex-A9 MPCore| Firmware and U-Boot
   * IDE-NeoVIM
+  * GDB debugging through bash terminal(WSL) remotely with qemu
   * Using U-Boot as the bootloader for the ARMv7 within QEMU, implement cmake and bash scripts for building/debugging the program
   * UART driver implementation of PL011 UART peripheral for Versatile Exppress hardware(Motherboard Express uATX)
   * Interrupt implementation through the Generic Interrupt Controller of Cortex-A9 MPCore cpu for the CoreTile Express A9x4 daughterboard
@@ -49,14 +50,14 @@ Portfolio showcasing  projects and skills in a website made from scratch using H
   * Implement padding for the bootloader and the firmware signer with a python script
 
 * [Automated Watering System](https://github.com/aibarr23/AWS_Project) Arduino Nano 33 IOT | SAMD21 cortex M0+
-  * Arduino IDE
+  * IDE-Arduino IDE
   * Control Servos and Moisture/Humidity Sensors for real time operations
   * Mobile Application created to provide necessary information and control towards the systems' hardware, water flow, and current state.
   * UDP client server communication between user application and deployed system
   * Wireless communication through Bluetooth Protocol BLE
 
 * [blink LED](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/Tiva_C_series/project%200) Texas Instrument Tiva C Launchpad | TM4C132GH6PM cortex M4
-  * Code Composer Studio
+  * IDE-Code Composer Studio
 
 </details>
 

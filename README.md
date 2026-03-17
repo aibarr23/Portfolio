@@ -1,110 +1,18 @@
 
 # Contents
 
-NOTE: website not upto date
-
 Website Link: <https://aibarr23.github.io/Portfolio/>
 
 Portfolio showcasing  projects and skills in a website made from scratch using HTML Javascript and CSS.
 
-<details>
-<summary>Embedded Systems</summary>
-
-* Embedded C/C++
-
-* Bare Metal
-
-  * Firmware
-
-  * Bare Metal projects
-
-* Unit Testing
-
-  * Pytest
-
-  * Utest
-
-  * Embedded Test ET
-
-* Debugging - printf | Tracing
-  * Software Tracing - QP/Spy
-  * printf w/o UART or Segger
-
-* RTOS
-
-  * FreeRTOS
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  TiRTOS
-
-  * MIROS
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  qm rtos
-
-</details>
-&nbsp;
-
-<details>
-<summary>FPGA</summary>
-
-* Verilog
-
-* VHDL
-
-</details>
-&nbsp;
-
-<details>
-<summary>Robotics</summary>
-
-* ROS2
-
-</details>
-&nbsp;
-
-<details>
-<summary>LabView</summary>
-
-* FOC Algorithm (FPGA CRIO)
-
-</details>
-&nbsp;
-
-<details>
-<summary>Automation Testing</summary>
-
-* ROBOT Framework
-
-</details>
-&nbsp;
-
-<details>
-<summary>Industrial Automation</summary>
-
-* PLC
-
-* HMI
-
-* SCADA
-
-</details>
-
-&nbsp;
-&nbsp;
-
-<!-- ## 1. Portfolio -->
-
-<!-- Raspberry pi (alpha bot) (MCU: Broadcom
-BCM2837B0, Cortex-A53)
-
-● Freescale FRDM-KL25Z (MCU: Kinetis®
-L Series KL1x (KL14/15) & KL25
-Cortex®-M0+) -->
-
 ## Embedded Systems
 
 ### RTOS
+
+<details>
+
+<summary>View projects
+</summary>
 
 * [QM RTOS](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/RTOS/Mini_RTOS) Tiva C Launchpad | TM4C132GH6PM cortex M4
   * uVision
@@ -114,11 +22,14 @@ Cortex®-M0+) -->
   * uVision
   * Making a Mini RTOS from scratch capable of preemtive, priority based scheduling; and efficient blocking of threads
 
-### Unit Testing
-
-* [Ring-Buffer](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/Emb_Testing/Embedded_Test/U-Test/examples/ring-buffer) Embedded Test- Quantum Leaps ET without mocking
+</details>
 
 ### Embedded C Bare Metal
+
+<details>
+
+<summary>View projects
+</summary>
 
 * [BootLoader](https://github.com/aibarr23/Embedded-Control-Robotics/tree/main/Firmware/BareMetalSeries) STM32 Cortex-M | Firmware
   * VSCode
@@ -140,9 +51,27 @@ Cortex®-M0+) -->
 * [blink LED](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/Tiva_C_series/project%200) Texas Instrument Tiva C Launchpad | TM4C132GH6PM cortex M4
   * Code Composer Studio
 
+</details>
+
+### Unit Testing
+
+<details>
+
+<summary>View projects
+</summary>
+
+* [Ring-Buffer](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/Emb_Testing/Embedded_Test/U-Test/examples/ring-buffer) Embedded Test- Quantum Leaps ET without mocking
+
+</details>
+
 ## FPGA
 
 ### Verilog Programming
+
+<details>
+
+<summary>View projects
+</summary>
 
 Learning src: [LinkedIn Learning](https://www.linkedin.com/learning/learning-fpga-development) and [LinkedIn Learning](https://www.linkedin.com/learning/learning-verilog-for-fpga-development)
 
@@ -150,11 +79,20 @@ Learning src: [LinkedIn Learning](https://www.linkedin.com/learning/learning-fpg
 
 * [Greater Than 2-Bit](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VERILOG/Greater%20than%202bit) Verilog Icarus Verilog
 
+</details>
+
 ### VHDL Programming
+
+<details>
+
+<summary>View projects
+</summary>
 
 * [Full Adder](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VHDL/Full_adder) VHDL - Icarus Verilog
 
 * [AND](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/FPGA/VHDL/AND) VHDL - Icarus Verilog
+
+</details>
 
 &nbsp;
 
@@ -162,7 +100,14 @@ Learning src: [LinkedIn Learning](https://www.linkedin.com/learning/learning-fpg
 
 ### FPGA Module
 
+<details>
+
+<summary>View projects
+</summary>
+
 * [FOC Motor Control](https://github.com/aibarr23/LabView/tree/main/FOC%20Algorithm)
+
+</details>
 
 &nbsp;
 
@@ -170,7 +115,14 @@ Learning src: [LinkedIn Learning](https://www.linkedin.com/learning/learning-fpg
 
 ### ROS2
 
+<details>
+
+<summary>View projects
+</summary>
+
 * [small 2 wheel robot](https://github.com/aibarr23/Embedded-Control-Robotics-PLC/tree/main/Robotics/ROS2/ROS_test) RViz and Frames
+
+</details>
 
 &nbsp;
 
@@ -178,9 +130,16 @@ Learning src: [LinkedIn Learning](https://www.linkedin.com/learning/learning-fpg
 
 ### Robot Framework
 
+<details>
+
+<summary>View projects
+</summary>
+
 Learning souce: [LinkdedIn learning](https://www.linkedin.com/learning/robot-framework-test-automation-level-1-selenium-21986416)
 
 * [Selenium](https://github.com/aibarr23/Test-Automation/tree/master/development/robot-scripts) Using robot framework with selenium
+
+</details>
 
 &nbsp;
 
@@ -189,6 +148,11 @@ Learning souce: [LinkdedIn learning](https://www.linkedin.com/learning/robot-fra
 ### PLC
 
 #### Rockwell Automation
+
+<details>
+
+<summary>View projects
+</summary>
 
 Learning source:
 [LinkedIn learning Path](https://www.linkedin.com/learning/paths/become-a-plc-developer)
@@ -202,6 +166,8 @@ Learning source:
 * [Control Panel](https://github.com/aibarr23/Industrial-Automation/tree/main//Control_Panel) Connected Components Workbench (CCW) - Ladder Logic
 
 * [dishwasher](https://github.com/aibarr23/Industrial-Automation/tree/main//dishwash) RSLogix emulate500, RSLinx - Ladder Logic
+
+</details>
 
 ### HMI
 <!-- 
